@@ -1,0 +1,4967 @@
+Problem solving with
+computer programming
+Basics of Problem solving & Programming logic
+
+Problem solving
+Problem solving is the process of understanding a problem,
+breaking it into smaller steps, and finding a logical solution using
+systematic methods.
+Problem solving is a structured approach that involves analyzing a
+problem, designing a solution, implementing it, and evaluating the
+result.
+
+Steps in problem solving
+1. Understanding the problem
+2. Analyzing the problem
+3. Designing algorithm and flowchart
+4. Writing code
+5. Testing & Debugging
+6. Updation & Maintenance
+
+Algorithm
+An algorithm is a finite set of well-defined, step-by-step instructions
+used to solve a problem or perform a task.
+Algorithms form the backbone of computer programming
+They are language independent and can be represented using
+pseudocode or flowcharts
+
+Example : Problem is to add two numbers
+Step 1: Start
+Step 2: Read two numbers A and B
+Step 3: Compute C = A + B
+Step 4: Display C
+Step 5: Stop
+
+Properties of an Algorithm
+1. Input
+An algorithm should have zero or more clearly defined inputs.
+2. Output
+It must produce at least one well-defined output.
+3. Definiteness (Clarity)
+Each step must be clear, precise, and unambiguous.
+4. Finiteness
+An algorithm must always terminate after a finite number of steps.
+
+Properties of an Algorithm
+5. Effectiveness
+Each step should be simple and basic enough to be carried out
+exactly and within a reasonable time.
+6. Correctness
+The algorithm must correctly solve the problem and produce the
+expected result.
+7. Generality
+The algorithm should work for all valid inputs of the problem, not just
+for a single case.
+
+Flowchart
+A flowchart is a visual diagram that represents an algorithm or process using standard symbols connected by arrows.
+
+Flowchart Symbols:
+Symbol Name       | Function
+------------------|----------------------------------------------------------
+Start/End (Oval)  | An oval represents a start or end point.
+Arrows            | A line/connector that shows relationships between shapes.
+Input/Output      | A parallelogram represents input or output.
+(Parallelogram)   |
+Process           | A rectangle represents a process.
+(Rectangle)       |
+Decision          | A diamond indicates a decision (Yes/No).
+(Diamond)         |
+Connector         | A circle that indicates the flow connection to the next symbol.
+(Circle)          |
+Document          | Indicates a report or a document.
+Multiple Document | Indicates multiple documents or reports.
+Alternate         | Indicates an alternate process to take place.
+Preparation       | A hexagon that indicates preparation taken for the following step.
+
+Flowchart
+eg : Largest among two numbers
+Step 1: Start
+Step 2: Read A, B
+Step 3: If A > B → Print A (Yes branch) | Print B (No branch)
+Step 4: End
+
+Flowchart
+eg : To find whether a number is odd or even
+Step 1: Start
+Step 2: Input Number
+Step 3: If Number % 2 == 0 → Display "Even Number" (Yes) | Display "Odd Number" (No)
+Step 4: End
+
+Flowchart
+eg: Largest among three numbers
+Step 1: Start
+Step 2: Read A, B, C
+Step 3: If A > B and A > C → Print A
+Step 4: Else If B > C → Print B
+Step 5: Else → Print C
+Step 6: End
+
+Programming Languages
+A programming language is a formal, structured language designed to
+communicate instructions to a computer. It provides a set of rules,
+syntax, and semantics that programmers use to write programs,
+express algorithms, and control the behavior of hardware and
+software systems. Through a programming language, humans can
+describe data processing tasks and logical operations in a way that
+the computer can understand and execute after translation by
+compilers or interpreters.
+
+Types of Programming Languages
+A. Low-Level Languages
+These are close to machine language.
+1. Machine Language
+Uses 0s and 1s
+Directly understood by the computer
+Very fast but hard to write
+2. Assembly Language
+Uses symbolic codes (ADD, MOV, SUB)
+Easier than machine language
+Needs an assembler
+
+B. High-Level Languages
+These are close to human language.
+Examples: C, C++, Java, Python, PHP, JavaScript.
+Features:
+Easy to understand
+Portable
+Needs a compiler/interpreter
+
+Translators in Programming
+A program written in any high-level language needs a translator.
+
+1. Compiler
+Converts the whole program at once
+Faster execution
+Examples: C, C++, Java
+2. Interpreter
+Translates line by line
+Slower execution
+Examples: Python, JavaScript
+3.Assembler
+converts assembly language programs into machine language.
+
+Basics of C programming
+
+Structure of C programming
+1. Preprocessor directives
+2. Global declarations (if any)
+3. Main function
+4. Local declarations
+5. Executable statements
+6. User defined functions (if any)
+
+Structure of C programming
+Documentation section
+Link section
+Definition section
+Global declaration section
+Main() function
+{
+Declaration part
+Executable part
+}
+subprogram section
+function 1
+function 2 etc
+
+Structure of C programming
+DOCUMENTATION SECTION:
+Consists of a set of comment lines giving the name of the
+program ,author and other details.
+LINK SECTION:
+Provides instructions to the compiler to link functions from the
+system library.
+
+DEFINITION SECTION:
+Defines all symbolic constants.
+
+Structure of C programming
+GLOBAL DECLARATION SECTION:
+There are some variables that are used in more than one function,
+such variables are called global variables. The section where these
+variables are declared is called global declaration section. User
+defined functions are declared here.
+MAIN() FUNCTION:
+Every program must have one main() function section. This
+section contains two parts, declaration part and executable part.
+There should be atleast one statement in the executable part. These
+two parts shoud be between the opening and closing braces.
+
+Structure of C programming
+SUB PROGRAM SECTION :
+Contains all the user defined functions that are called in the main
+function.They are generally placed immediately after the main
+function.
+
+PROGRAM TRANSLATION PROCESS
+Source Code
+↓
+The Program Translation Process is the         Preprocessor
+sequence of steps that convert human-                 ↓
+Compiler
+readable source code into machine-
+↓
+executable code.                                Assembler
+Each stage transforms the code closer to              ↓
+hardware-understandable binary                  Object Code
+↓
+instructions.                                      Linker
+↓
+Executable Code
+↓
+Loader (program runs)
+
+PROGRAM TRANSLATION PROCESS
+Source Code
+The program written by the programmer.
+Written in high-level language (C, Java, Python) or assembly.
+File example: program.c
+Not understandable by the machine.
+Preprocessing
+Performed by the Preprocessor.
+Handles commands starting with # (preprocessor directives).
+Tasks:
+Macro expansion (#define)
+File inclusion (#include)
+Conditional compilation (#ifdef, #ifndef)
+Output: Preprocessed code (still human-readable C code but expanded).
+
+PROGRAM TRANSLATION PROCESS
+Compilation (Compiler)
+Converts preprocessed code into assembly code.
+Syntax checking
+Semantic analysis
+Optimization
+Code generation
+Output: Assembly code (.asm or .s file)
+Assembly (Assembler)
+Converts assembly code into machine code.
+Machine code is in binary (0s and 1s).
+Produces Object File (.obj / .o)
+Object file contains:
+Machine code
+Symbol table
+Unresolved addresses
+
+PROGRAM TRANSLATION PROCESS
+Linking (Linker)
+Combines:
+Object files
+Library files
+Startup code
+Resolves external symbols (e.g., printf() from stdio library).
+Produces: Executable File (.exe / a.out)
+Loading (Loader)
+OS loads the executable into memory.
+Assigns memory addresses.
+Program starts execution.
+
+DATA TYPES IN C
+C provides different data types to store different kinds of values. They are mainly divided into
+Primary, Derived, and User-defined categories.
+
+Primary (Basic) Data Types
+
+Data Type            Description               Example
+Stores integers (whole
+int                  numbers)
+10, -5
+
+Stores single-precision
+float                decimal numbers
+3.14
+
+Stores double-
+double               precision decimal             3.141592
+numbers
+
+Stores a single
+char                 character
+'A', '5'
+
+DATA TYPES IN C
+Derived Data Types
+
+Data Type                            Description
+Array                                Collection of similar data elements
+Pointer                              Stores address of another variable
+
+Used to return values and perform
+Function
+operations
+
+Structure Pointer/Function Pointer   Advanced pointer types
+
+DATA TYPES IN C
+User-Defined Data Types
+Data Type          Description
+
+Group of different data types under
+struct
+one name
+Similar to struct, but shares
+union
+memory
+
+enum               Named set of integer constants
+
+DATA TYPES IN C
+Void Data Type
+
+Data Type   Description
+
+Means “no value” or “empty type”.
+void        Used in functions returning
+nothing or for generic pointers.
+
+INTEGER DATA TYPE
+Data Type            Size (bytes)            Range (Typical 32-bit GCC)
+
+short int / short                     2      –32,768 to +32,767
+
+unsigned short                        2      0 to 65,535
+
+int                                   4      –2,147,483,648 to
++2 147 483 647
+unsigned int                          4      0 to 4,294,967,295
+
+–2,147,483,648 to
+long int / long                     4 or 8
++2,147,483,647 (if 4 bytes)
+
+unsigned long                       4 or 8   0 to 4,294,967,295
+
+–9,223,372,036,854,775,808 to
+long long int                         8
++9,223,372,036,854,775,807
+
+unsigned long long                    8      0 to
+18 446 744 073 709 551 615
+
+FLOATING POINT DATA TYPE
+
+Data Type     Size             Range                   Precision
+
+float         4 bytes          ~3.4E-38 to 3.4E+38     6 digits
+
+double        8 bytes          ~1.7E-308 to 1.7E+308   15 digits
+
+long double   10 or 16 bytes   Very large              18+ digits
+
+CHAR DATA TYPE
+Data Type       Size     Range
+–128 to +127 (signed) OR 0
+char            1 byte
+to 255 (unsigned)
+signed char     1 byte   –128 to 127
+
+unsigned char   1 byte   0 to 255
+
+FORMAT SPECIFIERS
+Format specifiers are symbols used in printf() and scanf() to tell the compiler what type of data
+is being printed or read
+Specifier                                 Meaning
+
+%d                                   Integer (int)
+
+%f                                  Float / double
+
+%c                                    Character
+
+%s                                       String
+
+%u                                 Unsigned integer
+
+%lf                                     Double
+
+%x                              Hexadecimal number
+
+%o                                  Octal number
+
+KEYWORDS IN C
+Keywords are predefined, reserved words in C that have special meaning to the compiler.
+You cannot use them as variable names or identifiers.
+There are a total of 32 keywords in C
+auto     break   case      char
+const    continue default do
+double else      enum       extern
+float   for    goto     if
+int    long    register return
+short    signed sizeof static
+struct switch typedef union
+unsigned void      volatile while
+
+IDENTIFIERS
+Identifiers are names given to variables, functions, arrays, structures, etc., created by the
+programmer
+
+Rules for identifiers:                                                   Invalid Examples
+Must begin with a letter or underscore (_)                            2value
+Cannot start with a digit                                             int (keyword)
+Can contain letters, digits, and underscores                          total marks (space)
+No spaces allowed
+Case-sensitive (Age and age are different)                        Valid Examples
+Cannot use C keywords as identifiers                                  value2
+Should be meaningful and readable                                     _count
+total_marks
+
+IDENTIFIERS
+Keywords                  Identifiers
+Reserved by C language    Created by programmer
+Cannot be changed         Can be renamed freely
+Have predefined meaning   Have no predefined meaning
+Examples: int, while      Examples: age, sum
+
+VARIABLES
+A variable is a named memory location used to store data that can change during program execution.
+
+Characteristics of Variables
+Value can be changed at any time
+Must be declared before use
+Has a data type (int, float, char…)
+Occupies memory space
+
+Rules for Naming Variables
+Must start with a letter or underscore
+Cannot start with a number
+No special characters except _
+Case-sensitive (Age ≠ age)
+Cannot be a keyword
+Should be meaningful
+
+VARIABLES
+Declaration:                          Note :
+data_type variable_name;          Global variables are automatically
+eg : int marks;                   initialized to 0, whereas local variables
+are not initialized by default and
+Initialization:                       therefore contain garbage (undefined)
+age = 25;                       values.
+
+Declaration + Initialization:
+data_type variable_name = value;
+int age = 25;
+float salary = 50000.75;
+char grade = 'A';
+
+CONSTANTS
+A constant is a fixed value in a program that does not change during execution.
+Constants make programs easier to read, reliable, and less error-prone.
+TYPES OF CONSTANTS
+Integer Constant
+Floating-point constant
+Character constant
+String constant
+Escape sequence constant
+Symbolic constant
+
+ESCAPE SEQUENCE CONSTANTS
+Special characters starting with a backslash \.
+Escape Sequence                 Meaning
+
+\n                              New line
+
+\t                              Tab space
+
+\'                              Single quote
+
+\"                              Double quote
+
+\\                              Backslash
+
+Symbolic Constants
+Symbolic constants use a name to represent a fixed value.
+
+Using #define :
+
+#define PI 3.14
+#define MAX 100
+
+Using const keyword :
+
+const int MAX = 100;
+const float PI = 3.14;
+
+TOKENS
+Tokens are the smallest individual elements of a C program.
+They are the building blocks used to write any C program.
+Just like words form sentences, tokens form a C program.
+
+Types of Tokens in C
+C language has 6 types of tokens:
+1.Keywords
+2.Identifiers
+3.Constants
+4.Operators
+5.Strings
+6.Special Symbols
+
+OPERATORS
+An operator is a symbol that tells the compiler to perform a specific operation such as
+addition, comparison, or logical evaluation.
+Operators act on operands (variables or values).
+Example:
+a+b
+Here, + is an operator, a and b are operands.
+
+TYPES OF OPERATORS
+1.Arithmetic Operators
+2.Relational Operators
+3.Logical Operators
+4.Assignment Operators
+5.Increment/Decrement Operators
+6.Conditional (Ternary) Operator
+7.Bitwise Operators
+8.Special Operators
+
+ARITHMETIC OPERATORS
+Used for mathematical operations.
+
+Operator        Meaning
+
++          Addition
+
+-         Subtraction
+
+*        Multiplication
+
+/          Division
+
+%     Modulus (remainder)
+
+RELATIONAL OPERATORS
+Used to compare two values.
+Result is always true (1) or false (0).
+
+Operator                 Meaning
+
+==                       Equal to
+
+!=                       Not equal to
+
+>                        Greater than
+
+<                        Less than
+
+>=                       Greater or equal
+
+<=                       Less or equal
+
+LOGICAL OPERATORS
+Used for decision-making conditions.
+Operator                     Meaning
+
+&&         Logical AND
+
+||         Logical OR
+
+!         Logical NOT
+
+LOGICAL OPERATORS
+example OR operator
+int a = 10;
+int b = -1;
+if (a > 5 || b > 5) {
+printf("Condition True");
+}
+
+example NOT operator
+int flag = 1;
+if (!flag) {
+printf("False");
+}
+
+LOGICAL OPERATORS
+example AND operator
+int a = 5;
+int b = 10;
+if (a > 0 && b > 0) {
+printf("Both are positive");
+}
+
+ASSIGNMENT OPERATORS
+Used to assign values to variables.
+a += 5; // a = a + 5;
+
+Operator        Meaning
+
+=           Assign
+
++=       Add and assign
+
+-=    Subtract and assign
+
+*=     Multiply and assign
+
+/=     Divide and assign
+
+%=     Modulus and assign
+
+INCREMENT/DECREMENT
+Two types:
+Pre-increment: ++a
+Post-increment: a++
+Operator      Meaning
+++      Increment by 1
+--      Decrement by 1
+
+SAMPLE QUESTION
+1.What is the output of the following code?   2.main(){
+int main(){                                   int a,b;
+int a=5,b=2;                                  if(a==0)
+printf(“%d”,a++ + ++b);                       printf(“Hai”)
+return 0;                                     else
+}                                             printf(“Hello”);
+}
+ANS : 8                                       ANS : Hello
+
+CONDITIONAL (TERNARY) OPERATOR
+Only operator that uses three operands.
+SYNTAX :
+condition ? expression1 : expression2;
+Example :
+result = (age >= 18) ? "Adult" : "Minor";
+
+Bitwise Operators
+Operate on bits (0s and 1s).
+
+Operator    Meaning
+
+&          AND
+
+`            `
+
+^          XOR
+
+<<       Left shift
+
+>>      Right shift
+
+~       Bitwise NOT
+
+Special Operators
+Comma Operator (,)
+Separates variables or expressions.
+Sizeof Operator
+Used to find memory size of a data type.
+eg:sizeof(int); // returns 4
+Address (&) and Pointer (*) Operators
+& → Address of variable
+* → Value at address (pointer dereference)
+
+ARITHMETIC EXPRESSIONS
+It is the combintion of variables, constants, and operators arranged as per the syntax of
+the language.
+Evaluation of expressions
+Expressions are evaluated using an assignment statement of the form :
+Variable = Expression;
+eg: z=a-b/c+d;
+
+PRECEDENCE OF ARITHMETIC OPERATORS
+An arithmetic expression without parenthesis will be evaluated from left to right using
+the rules of precedence of operators.
+High priority : * /
+Low priority : +-
+When an expression contains many operators, C follows a fixed order to decide which
+operator is evaluated first.This is called Operator Precedence.
+
+PRECEDENCE OF ARITHMETIC OPERATORS
+Precedence Level       Operators             Description         Associativity
+
+Parentheses /
+1 (Highest)              ()                                   Left → Right
+function calls
+
+2           ++ -- ! ~ + - (unary)   Unary operators       Right → Left
+
+3                  */%               Multiplicative       Left → Right
+
+4                    +-                Additive           Left → Right
+
+5                < <= > >=            Relational          Left → Right
+
+6                    ==                Equality           Left → Right
+
+7                   &&               Logical AND          Left → Right
+
+8                    ||               Logical OR          Left-> Right
+
+9 (Lowest)                                                Assignment operators
+
+DECISION MAKING STATEMENTS (BRANCHING)
+Decision making statements are used to choose which set of statements should
+execute based on a condition.
+They help the program make choices and follow different paths.
+Decision Making Statements in C
+if
+if-else
+else-if ladder
+nested if
+switch-case
+
+IF STATEMENT
+Used to execute a block only when a condition is true.
+Syntax :
+if (condition) {
+// statements
+}
+Example :
+if(marks>50)
+{
+printf(“Pass”);
+}
+
+IF - ELSE STATEMENT
+Executes one block if the condition is true, otherwise executes   Example :
+the other block.
+if (num % 2 == 0)
+Syntax :                                                            printf("Even");
+else
+if (condition) {                                                    printf("Odd");
+// true block
+} else {
+// false block
+}
+
+ELSE IF LADDER                                      int marks;
+Used when there are multiple conditions to check.
+printf("Enter your marks: ");
+SYNTAX:
+scanf("%d", &marks);
+if (condition1) {
+...                                             if (marks >= 90) {
+printf("Grade: A\n");
+}
+}
+else if (condition2) {                              else if (marks >= 75) {
+...                                                 printf("Grade: B\n");
+}                                                   }
+else if (marks >= 60) {
+else if (condition3) {
+printf("Grade: C\n");
+...                                             }
+}                                                   else if (marks >= 40) {
+printf("Grade: D\n");
+else {
+}
+...                                             else {
+}                                                       printf("Grade: Fail\n");
+}
+
+NESTED IF
+
+An if inside another if.
+Used when decision making depends on more than one
+condition.
+EXAMPLE :
+if (a > 0) {
+if (a % 2 == 0) {
+printf("Positive even number");
+}
+}
+
+SWITCH STATEMENT
+Used when you want to choose between multiple fixed
+options.
+Works with integers and characters.
+SYNTAX:
+switch(expression) {
+case 1:
+// statements
+break;
+case 2:
+// statements
+break;
+default:
+// statements
+}
+
+LOOP STATEMENTS :
+A loop is a control structure that allows repeated execution of a block of code as long as a
+condition is true.
+Loops help reduce repetition and make programs efficient.
+LOOP STATEMENTS :
+1.for
+2.while
+3.do-while
+
+FOR LOOP
+Used when the number of iterations is known.
+SYNTAX :
+for (initialization; condition; increment/decrement) {
+// loop body
+}
+EXAMPLE :
+for (int i = 1; i <= 5; i++) {
+printf("%d ", i);
+}
+
+WHILE LOOP
+Used when the number of iterations is not known beforehand.
+Entry-controlled loop.
+SYNTAX :
+while (condition) {
+// loop body
+}
+EXAMPLE :
+int i = 1;
+while (i <= 5) {
+printf("%d ", i);
+i++;
+}
+
+DO-WHILE LOOP
+Loop executes the body at least once, even if the condition is false.
+Exit-controlled loop.
+SYNTAX:
+do {
+// loop body
+} while (condition);
+EXAMPLE:
+int i = 1;
+do {
+printf("%d ", i);
+i++;
+} while (i <= 5);
+
+JUMP STATEMENTS
+The statements that transfer control from one part of the program to another are known as
+Jump Statements.
+They include:
+1. goto Statement
+Transfers control unconditionally to a labeled statement.
+2. break Statement
+Exits from a loop or a switch statement immediately.
+3. continue Statement
+Skips the current iteration of a loop and moves to the next iteration.
+4. return Statement
+Exits from a function and optionally returns a value.
+
+GOTO STATEMENT
+Used to jump unconditionally to a labeled statement within the same function.
+EXAMPLE
+#include <stdio.h>
+int main() {
+int num = 3;
+if (num == 3)
+goto print;
+printf("This will be skipped");
+print:
+printf("Number is 3");
+return 0;
+}
+
+BREAK STATEMENT
+Used to exit a loop or a switch immediately.
+EXAMPLE:
+#include <stdio.h>
+int main() {
+for (int i = 1; i <= 5; i++) {
+if (i == 3)
+break; // loop stops here
+printf("%d ", i);
+}
+return 0;
+}
+
+CONTINUE STATEMENT
+Skips the current iteration and moves to the next loop iteration.
+EXAMPLE:
+#include <stdio.h>
+int main() {
+for (int i = 1; i <= 5; i++) {
+if (i == 3)
+continue; // skips printing 3
+printf("%d ", i);
+}
+return 0;
+}
+
+RETURN STATEMENT
+Used to exit a function and optionally return a value.
+EXAMPLE:
+#include <stdio.h>
+int display() {
+return 10; // returns 10 to main()
+}
+int main() {
+int x = display();
+printf("%d", x);
+return 0;
+}
+
+FUNCTIONS
+A function in C is a block of code that performs a specific task.
+It allows us to break a large program into smaller, reusable modules.
+Advantages
+Reusability: write once, use many times
+Modularity: program becomes clean and organized
+Easy debugging: errors are easier to find
+Code readability: program becomes easier to understand
+Memory efficiency: avoids repeating large code blocks
+
+TYPES OF FUNCTIONS
+
+1. Library Functions
+Already predefined in header files.
+Examples:
+printf(), scanf() (stdio.h)
+sqrt(), pow() (math.h)
+2. User-defined Functions
+Functions created by the programmer.
+
+COMMONLY USED FUNCTIONS & ITS HEADER FILES
+Header File     Common Functions                     Purpose
+
+stdio.h         printf(), scanf(), gets(), puts(),   Standard input/output
+fopen(), fclose()                    operations
+stdlib.h        malloc(), free(), atoi(), exit()     Memory allocation,
+conversions, program control
+string.h        strlen(), strcpy(), strcat(),        String handling
+strcmp()
+math.h          sqrt(), pow(), abs(), floor()        Mathematical computations
+
+ctype.h         isalpha(), isdigit(), toupper(),     Character classification &
+tolower()                            conversion
+time.h          time(), clock(), difftime()          Time and date functions
+
+STRUCTURE OF A FUNCTION
+A user-defined function has 3 main parts:
+1.Function Declaration (Prototype)
+Tells the compiler about the function name, return type, and parameters.
+2.Function Definition
+Actual body of the function where code is written.
+3.Function Call
+Tells the program to execute the function.
+
+SYNTAX OF A FUNCTION
+FUNCTION DECLARATION :
+return_type function_name(parameter_list);
+
+FUNCTION DEFINITION :
+return_type function_name(parameter_list) {
+// function body
+}
+FUNCTION CALL :
+function_name(arguments);
+
+EXAMPLE
+#include <stdio.h>
+// Function declaration
+void greet();
+// Main function
+int main() {
+greet(); // calling function
+return 0;
+}
+// Function definition
+void greet() {
+printf("Hello, welcome to C programming!");
+}
+
+ADVANTAGES OF FUNCTIONS
+Modularity
+Reusability
+Easy debugging
+Code readability
+Ease of maintenance
+Faster development
+Avoid repetition
+Supports abstraction
+
+MODULARITY
+Modularity means splitting a big program into smaller independent units (modules) where
+each module performs one specific task.
+In C, functions are used to implement modularity.
+
+EXAMPLE: CALCULATOR PROGRAM USING MODULARITY
+without modularity :All operations inside main() → code becomes long, confusing, hard to
+maintain.
+With modularity:We divide the program into modules:
+add() → handles addition
+subtract() → handles subtraction
+multiply() → handles multiplication
+divide() → handles division
+Each module is a function that works independently.
+
+EXAMPLE
+#include <stdio.h>
+int add(int a, int b) {                int main() {
+return a + b;   // Module 1            int x = 20, y = 10;
+}                                          printf("Addition: %d\n", add(x, y));
+int subtract(int a, int b) {               printf("Subtraction: %d\n", subtract(x, y));
+return a - b;   // Module 2            printf("Multiplication: %d\n", multiply(x,
+}                                      y));
+int multiply(int a, int b) {               printf("Division: %.2f\n", divide(x, y));
+return a * b;   // Module 3            return 0;
+}                                      }
+float divide(int a, int b) {
+return (float)a / b; // Module 4
+}
+
+HOW THIS DEMONSTRATES MODULARITY
+1. Each function works independently
+add() only adds
+subtract() only subtracts
+No function does more than one job → Single Responsibility Principle
+2. Easy to understand and debug
+If addition is wrong, you only check the add() function.
+3. Easy to update
+If you want to add error handling for division (like divide by zero),
+you only modify the divide() module.
+4. Reusable
+These functions can be reused in other programs without rewriting.
+
+CATEGORIES OF FUNCTION
+
+Category                         Parameters                                   Return Value
+Category           Parameters   Return Value
+
+1. No arguments, no return 1. No arguments,
+No                  No           No             No
+value                      no return value
+2. Arguments, no
+Yes          No
+return value
+2. Arguments, no return        3. No arguments,
+Yes              No           Yes            No
+value                          return value
+4. Arguments and
+Yes          Yes
+return value
+3. No arguments, return
+No                                           Yes
+value
+
+4. Arguments and return
+Yes                                          Yes
+value
+
+PARAMETERS
+Parameters are variables defined in the function declaration/definition.
+They act as placeholders to receive values.
+Example :
+void add(int a, int b) // a and b are parameters
+{
+printf("%d", a + b);
+}
+Also known as formal parameter
+
+ARGUMENTS
+Arguments are the actual values passed to the function when calling it.
+They are used to send data to the function.
+Example :
+add(5, 10); // 5 and 10 are arguments
+Also known as actual parameter
+
+CALL BY VALUE
+In call by value, a copy of the actual value is passed to the function.
+Changes made inside the function do NOT affect the original variable.
+EXAMPLE :
+#include <stdio.h>
+void change(int x) {
+x = 50;    // only local copy changes
+}
+int main() {
+int a = 10;
+change(a);
+printf("%d", a); // Output: 10
+}
+
+CALL BY REFERENCE
+In call by reference, the address (pointer) of the variable is passed to the function.
+Changes made inside the function affect the original variable
+EXAMPLE:
+#include <stdio.h>
+void change(int *x) {
+*x = 50; // modifies original variable
+}
+int main() {
+int a = 10;
+change(&a);
+printf("%d", a); // Output: 50
+}
+
+RECURSION
+Recursion is a process where a function calls itself to solve a problem.
+A recursive function breaks a big problem into smaller subproblems of the same type.
+Must have a base condition to stop the function from calling itself infinitely.
+Why Recursion?
+Useful for problems that naturally repeat in smaller patterns, like:
+Factorial
+Fibonacci series
+Tree/graph traversal
+Searching and sorting techniques
+
+RECURSION
+Recursion is a process where a function calls itself to solve a problem.
+A recursive function breaks a big problem into smaller subproblems of the same type.
+Must have a base condition to stop the function from calling itself infinitely.
+Why Recursion?
+Useful for problems that naturally repeat in smaller patterns, like:
+Factorial
+Fibonacci series
+Tree/graph traversal
+Searching and sorting techniques
+
+EXAMPLE
+int fact(int n) {
+if (n == 0)     // Base condition
+return 1;
+return n * fact(n - 1); // Recursive call
+}
+How it works?
+fact(3) → 3 * fact(2)
+fact(2) → 2 * fact(1)
+fact(1) → 1 * fact(0)
+fact(0) → 1 (base condition)
+Then returns back with multiplication.
+
+SCOPE OF A FUNCTION
+Scope of a function refers to where the function can be accessed or called within the
+program.
+In C, functions have file-level scope, meaning a function can be used anywhere in the same
+file after its declaration or prototype
+TYPES OF FUNCTION SCOPE
+1. Function Declaration Scope
+When you declare a function using a prototype at the top of the file,
+it can be called from any part of the program.
+Example:
+int add(int a, int b); // Function prototype
+
+TYPES OF FUNCTION SCOPES
+2. Function Definition Scope
+A function defined in a file is accessible only within that file
+unless you use the extern keyword in multi-file programs.
+3. Local Scope (Inside Functions)
+Variables declared inside a function can be accessed only within that function.
+They are destroyed when the function ends.
+void fun() {
+int x = 10; // x is local to fun()
+}
+4. Global Scope (Outside Functions)
+Variables declared outside all functions can be accessed by any function in the file.
+int y = 20; // global variable
+
+SCOPE OF A FUNCTION
+A function has file scope, not block scope.
+Other functions must know the function name and parameters (via prototype) to call it.
+Local variables inside a function cannot be used elsewhere.
+Global variables can be used in any function.
+
+SCOPE OF A FUNCTION
+#include <stdio.h>
+int g = 5; // Global scope
+void display() {
+int x = 10; // Local scope to display()
+printf("%d %d", g, x);
+}
+int main() {
+display();
+// x cannot be used here → scope is limited to display()
+return 0;
+}
+
+ARRAYS
+An array is a collection of elements of the same data type, stored in contiguous memory
+locations, and accessed using a common name with an index.
+
+FEATURES
+Same data type for all elements
+Contiguous memory allocation
+Index starts from 0
+Fixed size (cannot change at runtime)
+
+TYPES OF ARRAYS
+One-Dimensional Array (1D array)
+Two-Dimensional Array (2D array / matrix)
+Multi-Dimensional Array
+
+ONE-DIMENSIONAL ARRAYS
+DECLARATION                                PARTIAL INITIALIZATION
+data_type array_name[size];             int a[5] = {1, 2}; // remaining elements become 0
+example :
+int marks[5];
+float price[10];                        INDEX-WISE INITIALIZATION
+char name[20];
+marks[0] = 20;
+marks[1] = 40;
+INITIALIZATION AT DECLARATION
+int marks[5] = {10, 20, 30, 40, 50};
+
+INDEXING IN ARRAYS
+Array index always starts from 0.
+Example:
+If int arr[5] = {10,20,30,40,50};
+Then,
+arr[0] = 10
+arr[1] = 20
+arr[2] = 30
+...
+arr[4] = 50
+Invalid: arr[5] (out of range)
+
+STORING & ACCESSING ELEMENTS EXAMPLE
+int arr[4];
+arr[0] = 5;
+arr[1] = 10;
+arr[2] = 15;
+arr[3] = 20;
+printf("%d", arr[2]); // Output: 15
+
+EXAMPLE PROGRAM – INPUT & OUTPUT OF 1D ARRAY
+#include <stdio.h>
+int main() {
+int a[5];
+int i;
+printf("Enter 5 numbers: ");
+for(i = 0; i < 5; i++) {
+scanf("%d", &a[i]);
+}
+printf("You entered: ");
+for(i = 0; i < 5; i++) {
+printf("%d ", a[i]);
+}
+return 0;
+}
+
+EXAMPLE PROGRAM – SUM OF ELEMENTS (1D ARRAY)
+#include <stdio.h>
+int main() {
+int a[5] = {1, 2, 3, 4, 5};
+int sum = 0;
+for(int i = 0; i < 5; i++) {
+sum += a[i];
+}
+printf("Sum = %d", sum);
+return 0;
+}
+
+TWO-DIMENSIONAL ARRAYS
+DECLARATION
+data_type array_name[rows][columns];
+EXMPLE : int matrix[2][3];
+INITIALIZATION
+int matrix[2][3] = {
+{1, 2, 3},
+{4, 5, 6}
+};
+or
+int matrix[2][3] = {1,2,3,4,5,6};
+
+EXAMPLE PROGRAM – READING & PRINTING 2D ARRAY
+#include <stdio.h>
+int main() {
+int a[2][3];
+int i, j;
+printf("Enter 6 numbers:\n");
+for(i = 0; i < 2; i++) {
+for(j = 0; j < 3; j++) {
+scanf("%d", &a[i][j]);
+}           }
+printf("Matrix:\n");
+for(i = 0; i < 2; i++) {
+for(j = 0; j < 3; j++) {
+printf("%d ", a[i][j]);
+}
+printf("\n");
+}
+return 0;
+
+}
+
+PROGRAM – SUM OF 2D MATRIX
+#include <stdio.h>
+int main() {
+int a[2][2] = {{1, 2},
+{3, 4}};
+int sum = 0;
+for(int i = 0; i < 2; i++) {
+for(int j = 0; j < 2; j++) {
+sum += a[i][j];
+}
+}
+printf("Sum = %d", sum);
+return 0;
+}
+
+POINTERS
+A pointer is a variable that stores the memory address of another variable.
+Instead of storing a value directly, it points to the location where the value is stored.
+
+POINTER DECLARATION
+data_type *pointer_name;
+EXAMPLE :int *p;
+POINTER INITIALIZATION
+int a = 10;
+int *p = &a; // p stores the address of a
+
+POINTER OPERATOR
+ADDRESS-OF OPERATOR (&)
+Gives the address of a variable.
+p = &a;
+
+DEREFERENCE OPERATOR (*)
+Accesses the value stored at that address.
+printf("%d", *p); // value of a
+
+EXAMPLE
+Suppose you declare:
+int a = 10;
+int *p;
+p = &a;
+Let’s assume:
+Variable a is stored at memory location 1004
+So, &a (address of a) = 1004
+Now:
+p is a pointer variable
+When we write p = &a;
+→ pointer p will store the value 1004
+
+STRUCTURE
+A structure (struct) is a user-defined data type in C that allows you to combine different
+types of data together under one name.
+Example: A student has
+name (string)
+age (int)
+marks (float)
+Different data types grouped together → Structure
+
+DECLARING A STRUCTURE
+struct Student {
+int age;                ACCESSING STRUCTURE MEMBERS
+float marks;
+char name[20];             Use the dot (.) operator.
+};                              s1.age = 18;
+s1.marks = 95.4;
+DECLARING STRUCTURE VARIABLES
+struct Student s1;
+or
+struct Student {
+int age;
+float marks;
+char name[20];
+} s1, s2;
+
+UNION
+A union is a user-defined data type in C where all members share the same memory location.
+This means only one member can store a value at a time.
+SYNTAX:
+union UnionName {
+int a;
+float b;
+char c;
+};
+
+CREATING UNION VARIABLE
+union union_name variable_name;
+EXAMPLE:                          NOTE
+union Student s1;
+A union can store only one member value at
+a time because all members share the same
+memory location.
+ACCESSING UNION MEMBERS              So assigning s1.grade will overwrite previous
+values.
+s1.id = 101;
+s1.marks = 87.5;
+s1.grade = 'A';
+
+DIFFERENCE BETWEEN STRUCT & UNION
+Feature             Structure                               Union
+
+Allocates separate memory for each      Allocates common memory shared by
+Memory Allocation
+member                                  all members
+
+Memory Size         Size = sum of all members               Size = size of largest member
+
+All members can hold values at the      Only one member can hold value at a
+Value Storage
+same time                               time
+When you need to store multiple data
+Use Case                                                    When memory saving is required
+fields
+Data that can be of different types but
+Example             Student record with name, roll, marks
+used one at a time
+Changing one member does not affect     Changing one member overwrites
+Access
+other members                           previous data
+
+ENUM
+An enum (enumeration) in C is a user-defined data type that assigns meaningful names to a
+set of integer constants. It helps make programs more readable by replacing numbers with
+names.
+EXMAPLE:
+#include <stdio.h>
+enum Day { MON, TUE, WED, THU, FRI, SAT, SUN };
+int main() {
+enum Day today = WED;
+printf("%d", today);
+return 0;
+}
+OUTPUT : 2
+
+STRINGS
+A string is a sequence of characters stored in contiguous memory locations.
+In C/C++, strings are represented as arrays of characters ending with a null character
+'\0'.
+EXAMPLE :
+char name[10] = "Happlle"; // 'H','a','p','p','l',’l’,’e’,'\0'
+DECLARING STRINGS:
+char str[20]; // declares a string of max 19 characters + 1 null
+STRING LITERAL INITIALIZATION:
+char str[] = "Hello";
+
+STRING OPEARTIONS
+Operation             Function in <string.h>    Example
+Length of string      strlen()                  strlen(str)
+Copy string           strcpy()                  strcpy(dest, src)
+Concatenate strings   strcat()                  strcat(str1, str2)
+Compare strings       strcmp()                  strcmp(str1, str2)
+Reverse string        strrev() (non-standard)   strrev(str)
+
+FILE HANDLING
+Allows programs to store data permanently on disk.
+Files can be used to read, write, and append data.
+Two types of files:
+Text Files: Human-readable data.
+Binary Files: Stored in binary format, more compact.
+
+STEPS IN FILE HANDLING
+Open a file using fopen()
+Perform operations – read/write
+Close the file using fclose()
+EXAMPLE::
+FILE *fp;
+fp = fopen("data.txt", "r"); // open file for reading
+fclose(fp);          // close file
+
+FILE MODES
+
+Mode                    Description
+"r"   Read only (file must exist)
+"w"    Write only (creates new or overwrites)
+"a"    Append (write at end)
+"r+"   Read and write (file must exist)
+"w+"   Read and write (creates new or overwrites)
+"a+"   Read and append (write at end)
+
+READING FROM A FILE                        WRITING TO A FILE
+
+fgetc() – reads a single character         fputc() – writes a single character
+fgets() – reads a string/line              fputs() – writes a string
+fscanf() – reads formatted input           fprintf() – writes formatted data
+EXAMPLE :                                  EXAMPLE :
+char ch;                                    FILE *fp = fopen("file.txt", "w");
+FILE *fp = fopen("file.txt", "r");          fputs("Hello World", fp);
+ch = fgetc(fp); // read first character     fclose(fp);
+fclose(fp);
+
+FILE HANDLING FUNCTIONS
+Function           Description
+
+fopen()            Open a file
+
+fclose()           Close a file
+
+fgetc()         Read a character
+
+fputc()        Write a character
+
+fgets()          Read a string
+
+fputs()          Write a string
+
+fprintf()      Write formatted data
+
+fscanf()       Read formatted data
+
+feof()          Check end of file
+
+PROBLEM SOLVING
+
+PROBLEM SOLVING STEPS
+1.Analyzing the problem
+2.Developing an algorithm
+3.Coding
+ALGORITHM DESIGN TECHNIQUES
+4.Testing and debugging
+1.Brute force
+PROBLEM TYPES                      2.Divide & conquer
+3.Greedy technique
+1.sorting
+4.Dynamic programming
+2.searching
+5.Branch & Bound
+3.string processing
+6.Backtracking
+4.graph problems
+5.combinational problems
+6.geometric problems
+7.numerical problems
+
+BRUTE FORCE METHOD
+A simple problem-solving technique that tries all possible solutions until the correct
+one is found.
+Also called Exhaustive Search.
+No shortcuts or optimization — checks every option.
+Easy to understand and implement, but slow for large inputs.
+PROBLEMS SOLVED USING THIS METHOD
+Selection sort
+linear search
+String matching
+Travelling sales man problem
+Password cracking
+Finding maximum or minimum
+Generating permutations/combinations
+
+DIVIDE AND CONQUER METHOD
+A problem-solving technique that breaks a big problem into smaller sub-problems.
+Solve each small problem recursively.
+Combine their results to get the final solution.
+Used in many efficient algorithms.
+
+PROBLEMS SOLVED USING THIS METHOD
+merge sort
+quick sort
+Binary search
+Matrix multiplication
+
+GREEDY METHOD
+A problem-solving strategy where at each step, we choose the best possible (locally
+optimal) choice.
+The hope is that these local best choices lead to the global best solution.
+Faster and simpler than Divide & Conquer and Dynamic Programming.
+
+PROBLEMS SOLVED USING THIS METHOD
+knapsack problem
+prims
+kruskals
+job sequencing/job scheduling
+dijkstra’s Shortest Path
+
+GREEDY METHOD
+A problem-solving strategy where at each step, we choose the best possible (locally
+optimal) choice.
+The hope is that these local best choices lead to the global best solution.
+Faster and simpler than Divide & Conquer and Dynamic Programming.
+
+PROBLEMS SOLVED USING THIS METHOD
+knapsack problem
+prims
+kruskals
+job sequencing/job scheduling
+dijkstra’s Shortest Path
+
+DYNAMIC PROGRAMMING
+A technique used to solve complex problems by breaking them into smaller sub-
+problems.
+Unlike Divide & Conquer, DP stores results of sub-problems to avoid recalculation.
+Works when the problem has overlapping subproblems and optimal substructure.
+
+PROBLEMS SOLVED USING THIS METHOD
+shortest path
+knapsack problem
+Fibonacci numbers
+
+BRANCH AND BOUND
+A problem-solving technique used for optimization problems.
+Explores all possible solutions like brute force but in a smarter way.
+Uses bounds to eliminate (prune) branches that cannot lead to a better solution.
+Helps reduce unnecessary search and improves efficiency.
+
+PROBLEMS SOLVED USING THIS METHOD
+8 puzzle program
+Travelling sales man problem
+Graph coloring
+
+BACKTRACKING
+Backtracking is a systematic search technique used to solve problems by trying all
+possible solutions but abandoning (backtracking) early when a choice is not valid.
+
+PROBLEMS SOLVED USING THIS METHOD
+N queens problem
+Sum of subset problem
+Sudoko solver
+Hamiltonian cycle
+Graph coloring
+
+TIME COMPLEXITIES OF SEARCHING ALGORITHMS
+Algorithm      Best Case   Average Case   Worst Case
+Linear Search     O(1)          O(n)          O(n)
+Binary Search     O(1)        O(log n)      O(log n)
+
+TIME COMPLEXITIES OF SORTING ALGORITHMS
+Algorithm      Best Case    Average Case   Worst Case
+
+Bubble Sort       O(n)          O(n²)         O(n²)
+
+Selection Sort     O(n²)         O(n²)         O(n²)
+
+Insertion Sort     O(n)          O(n²)         O(n²)
+
+Merge Sort      O(n log n)    O(n log n)    O(n log n)
+
+Quick Sort      O(n log n)    O(n log n)      O(n²)
+
+Heap Sort      O(n log n)    O(n log n)    O(n log n)
+
+Counting Sort     O(n + k)      O(n + k)      O(n + k)
+
+Radix Sort        O(nk)         O(nk)         O(nk)
+
+TREE AND GRAPH ALGORITHMS
+
+Algorithm                     Time Complexity
+DFS (Depth First Search)                  O(V + E)
+BFS (Breadth First Search)                 O(V + E)
+Dijkstra’s Algorithm      O((V + E) log V) using priority queue
+Prim’s Algorithm                   O((V + E) log V)
+Kruskal’s Algorithm                    O(E log V)
+
+DIVIDE AND CONQUER ALGORITHMS
+
+Algorithm            Time Complexity
+Binary Search              O(log n)
+Merge Sort               O(n log n)
+Quick Sort     O(n log n) (avg), O(n²) (worst)
+
+DYNAMIC PROGRAMMING
+Problem         Time Complexity
+
+Fibonacci (DP)         O(n)
+Longest Common
+O(n × m)
+Subsequence (LCS)
+Knapsack (0/1)         O(nW)
+
+HASHING
+Operation   Time Complexity
+
+Insert      O(1) average
+
+Search      O(1) average
+
+Delete      O(1) average
+
+C++
+
+Feature                C                       C++
+Programming Paradigm   Procedural              Procedural + OOP + Generic
+Approach               Top-down                Bottom-up
+Encapsulation          Not supported           Supported (classes)
+Data Hiding            No                      Yes (access specifiers)
+Function Overloading   No                      Yes
+Operator Overloading   No                      Yes
+Inheritance            No                      Yes
+Polymorphism           No                      Yes
+Exception Handling     No                      Yes (try/catch)
+Memory Allocation      malloc()/free()         new/delete
+Namespace              No                      Yes (namespace std)
+I/O Functions          printf(), scanf()       cout, cin
+Templates              No                      Yes
+
+Structures             Limited                 Can contain functions, access
+modifiers
+Speed                  Faster (low-level)      Slightly slower (extra features)
+
+Uses                   Systems, OS, embedded   Apps, games, compilers, OOP
+systems
+
+OOPS
+Object-Oriented Programming (OOP) is a programming approach that organizes
+software into objects, which combine both data and functions.
+It focuses on building programs that are modular, reusable, flexible, and easier to
+maintain.
+OOP models real-world entities like Student, Car, BankAccount as objects, making
+programs more logical and scalable.
+CLASS:
+Blueprint/template that defines data members and functions.
+OBJECTS:
+Real-world entity created from a class.
+EXAMPLE :
+Car myCar; → Car is class, myCar is object.
+
+OOPS
+Pillars of OOP
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism
+
+1.ENCAPSULATION
+Wrapping data (variables) and functions (methods) together into a single unit called a
+class.
+
+2.ABSTRACTION
+Showing only essential features and hiding the complex internal details
+3.INHERITANCE
+One class (child/derived) acquires properties of another class (parent/base).
+Types:
+Single
+Multilevel
+Multiple
+Hierarchical
+Hybrid
+
+4.POLYMORPHISM
+Ability of the same function or operator to behave differently based on context.
+Key Types:
+Compile-time Polymorphism
+Function overloading
+Operator overloading
+Runtime Polymorphism
+Function overriding using virtual functions
+Example:
+area() behaves differently for circle, triangle, and rectangle classes.
+
+
+================================================================================
+                         COMPUTER SCIENCE STUDY NOTES
+         Data Representation | Binary Arithmetic | Problem Solving & C Programming
+================================================================================
+
+
+================================================================================
+UNIT 1: DATA REPRESENTATION
+================================================================================
+
+DEFINITION
+----------
+Data representation refers to the methods used to represent information such as
+numbers, characters, and symbols in a form (typically binary) that can be stored,
+processed, and understood by a computer.
+Computers represent all types of data (text, numbers, images) using binary (0s and 1s).
+
+
+NUMBER SYSTEMS
+--------------
+  Base    System        Digits Used
+  ----    ----------    -----------
+  2       Binary        0, 1
+  8       Octal         0 to 7
+  10      Decimal       0 to 9
+  16      Hexadecimal   0 to 9 and A to F
+
+
+DECIMAL TO BINARY CONVERSION
+------------------------------
+INTEGER PART:
+  1. Divide the decimal number by 2.
+  2. Record the remainder (0 or 1).
+  3. Continue dividing the quotient by 2 until the quotient is 0.
+  4. The binary equivalent is the remainders read from bottom to top.
+
+  Example: (27)10
+    27 / 2 = 13  remainder 1  (LSB)
+    13 / 2 =  6  remainder 1
+     6 / 2 =  3  remainder 0
+     3 / 2 =  1  remainder 1
+     1 / 2 =  0  remainder 1  (MSB)
+    Result: (27)10 = (11011)2
+
+FRACTIONAL PART:
+  1. Multiply the fractional part by 2.
+  2. Record the integer part (0 or 1).
+  3. Take the fractional part of the result and repeat.
+  4. Continue until the fractional part becomes 0 or reaches desired precision.
+  5. The binary equivalent is the integer parts recorded in sequence.
+
+  Example: (0.65)10
+    0.65 x 2 = 1.3  -> carry 1
+    0.3  x 2 = 0.6  -> carry 0
+    0.6  x 2 = 1.2  -> carry 1
+    0.2  x 2 = 0.4  -> carry 0
+    ...and so on
+
+COMBINED EXAMPLE: (17.8)10
+  Integer part:  (17)10 = (10001)2
+  Fractional part: (0.8)10 = (0.1100)2
+  Result: (17.8)10 = (10001.1100)2
+
+
+BINARY TO DECIMAL CONVERSION
+------------------------------
+INTEGER PART:
+  Multiply each digit by 2 raised to the power of its position (starting from 0,
+  rightmost digit), then add all results.
+
+  Example: (101010)2
+    = 1x2^5 + 0x2^4 + 1x2^3 + 0x2^2 + 1x2^1 + 0x2^0
+    = 32 + 0 + 8 + 0 + 2 + 0 = 42
+
+FRACTIONAL PART:
+  Multiply each digit by 2 raised to the negative power of its position (starting
+  from -1 for the first digit after the decimal point).
+
+  Example: (0.1101)2
+    = 1x2^-1 + 1x2^-2 + 0x2^-3 + 1x2^-4
+    = 0.5 + 0.25 + 0 + 0.0625 = 0.8125
+
+
+HEXADECIMAL TO BINARY CONVERSION
+----------------------------------
+Each hexadecimal digit (0-9 and A-F) is represented by a 4-bit binary number.
+
+  Hex  Binary    Hex  Binary
+  ---  ------    ---  ------
+  0    0000       8   1000
+  1    0001       9   1001
+  2    0010       A   1010
+  3    0011       B   1011
+  4    0100       C   1100
+  5    0101       D   1101
+  6    0110       E   1110
+  7    0111       F   1111
+
+  Example: (3A)16
+    3 -> 0011
+    A -> 1010
+    Result: (3A)16 = (00111010)2
+
+
+BINARY TO HEXADECIMAL CONVERSION
+----------------------------------
+  1. Start from the rightmost bit; divide binary number into groups of 4.
+  2. If bits are not a multiple of 4, pad the leftmost group with leading zeros.
+  3. Replace each 4-bit group with the corresponding hex digit.
+
+  Example: (1111011011)2
+    Group: 0011  1101  1011
+    Hex:     3     D     B
+    Result: (1111011011)2 = (3DB)16
+
+
+BINARY TO OCTAL CONVERSION
+----------------------------
+  1. Starting from rightmost bit, divide binary number into groups of 3.
+  2. If bits are not a multiple of 3, add leading zeros to leftmost group.
+  3. Replace each 3-bit group with the corresponding octal digit.
+
+  Example: (111101101)2
+    Group: 111  101  101
+    Octal:  7    5    5
+    Result: (111101101)2 = (755)8
+
+
+OCTAL TO BINARY CONVERSION
+----------------------------
+  Each octal digit (0-7) corresponds to a 3-bit binary number.
+
+  Example: (153)8
+    1 -> 001
+    5 -> 101
+    3 -> 011
+    Result: (153)8 = (001101011)2
+
+
+DECIMAL TO OCTAL CONVERSION
+-----------------------------
+  Integer Part:
+    Divide by 8, record remainder, read remainders from bottom to top.
+  Fractional Part:
+    Multiply by 8, record integer part, read in sequence.
+
+  Example: (10.25)10
+    Integer: 10 / 8 = 1 remainder 2  ->  (10)10 = (12)8
+    Fraction: 0.25 x 8 = 2.0         ->  (0.25)10 = (0.2)8
+    Result: (10.25)10 = (12.2)8
+
+
+OCTAL TO DECIMAL CONVERSION
+-----------------------------
+  Integer Part: Multiply each digit by 8 raised to the power of its position.
+  Fractional Part: Multiply each digit by 8 raised to the negative power of position.
+
+  Example: (12.2)8
+    Integer: 1x8^1 + 2x8^0 = 8 + 2 = 10
+    Fraction: 2 x (1/8) = 0.25
+    Result: (12.2)8 = (10.25)10
+
+
+DECIMAL TO HEXADECIMAL CONVERSION
+-----------------------------------
+  Integer Part: Divide by 16, record remainder (0-9 or A-F), read from bottom to top.
+  Fractional Part: Multiply by 16, record integer part (0-9 or A-F), read in sequence.
+
+
+HEXADECIMAL TO DECIMAL CONVERSION
+-----------------------------------
+  Integer Part: Multiply each digit by 16 raised to the power of its position.
+  Fractional Part: Multiply each digit by 16 raised to the negative power of position.
+
+  Example: (A.4)16
+    A = 10
+    Integer: 10 x 16^0 = 10
+    Fraction: 4 x 16^-1 = 0.25
+    Result: (A.4)16 = (10.25)10
+
+
+REPRESENTATION OF INTEGERS
+----------------------------
+  1. Sign and Magnitude
+  2. 1's Complement
+  3. 2's Complement
+  4. BCD (Binary Coded Decimal)
+
+SIGN AND MAGNITUDE:
+  - The number is divided into two parts: Sign bit and Magnitude.
+  - Sign bit: 1 for negative, 0 for positive.
+  - The magnitude is represented in binary.
+  Example: +4 = 00000100,  -4 = 10000100
+
+1'S COMPLEMENT:
+  - Obtained by flipping all bits (0 becomes 1, and 1 becomes 0).
+  - Positive numbers remain unchanged.
+  - Negative numbers: take 1's complement of their positive counterpart.
+  Example (8-bit): +9 = 00001001,  -9 = 11110110
+
+2'S COMPLEMENT:
+  - Obtained by taking 1's complement and adding 1.
+  - Positive numbers are the same as 1's complement.
+  - Negative numbers: take 2's complement of their positive counterpart.
+
+BCD (Binary Coded Decimal):
+  Each decimal digit (0-9) is converted to its 4-bit binary equivalent.
+
+  Decimal  BCD       Decimal  BCD
+  -------  ----      -------  ----
+  0        0000       5       0101
+  1        0001       6       0110
+  2        0010       7       0111
+  3        0011       8       1000
+  4        0100       9       1001
+
+
+REPRESENTATION OF FRACTIONS
+-----------------------------
+  1. Binary fraction representation
+  2. Fixed point representation
+  3. BCD with decimal point
+  4. Floating point representation
+
+
+FLOATING POINT REPRESENTATION
+-------------------------------
+  A method used to represent real numbers (numbers with fractions/decimals).
+
+  Example: Convert 6.25 to binary
+    6   -> 110
+    0.25 -> 0.01
+    6.25 = 110.01 (binary) — this is a floating point number.
+
+NORMALIZED FLOATING POINT REPRESENTATION:
+  The most significant digit (leftmost) of the mantissa is always non-zero
+  (in binary, always 1).
+
+  IEEE 754 Format:   Number = 1.mantissa x 2^(exponent)
+  Bias: 127 for 32-bit, 1023 for 64-bit
+
+  32-bit: 1 sign bit + 8 exponent bits + 23 mantissa bits
+  64-bit: 1 sign bit + 11 exponent bits + 52 mantissa bits
+
+  Example: Convert 7.25 to 32-bit IEEE 754
+    Step 1: 7 -> 111,  0.25 -> 0.01   =>  7.25 = 111.01 (binary)
+    Step 2: Normalize:  111.01 = 1.1101 x 2^2
+    Step 3: Sign = 0 (positive)
+            Exponent = 2 + 127 = 129 = 10000001
+            Mantissa = 1101 followed by 0s (23 bits total)
+    Result: 0 10000001 11010000000000000000000
+
+
+REPRESENTATION OF CHARACTERS
+------------------------------
+  1. ASCII        - 7-bit, represents 128 characters (0-127)
+  2. Extended ASCII - 8-bit, represents 256 characters (0-255)
+  3. EBCDIC       - 8-bit, 256 characters; incompatible with ASCII
+  4. ISCII        - Indian Script Code; 8-bit; extends ASCII for Indian languages
+  5. Unicode      - 16-bit; represents 65,536 characters; covers almost all world languages
+
+ASCII Key Values:
+  A=65, B=66, ..., Z=90
+  a=97, b=98, ..., z=122
+  Space=32, 0=48, 1=49, ..., 9=57
+
+BINARY TO ASCII CONVERSION:
+  1. Group the binary bits in groups of 7 from right to left.
+  2. Find the decimal equivalent of each group.
+  3. Look up the ASCII character for each decimal value.
+
+  Example: 1000010 0100110 1100010
+    1000010 = 66 = B
+    0100110 = 38 = &   (note: 38 is '&', not 'b' as written in slides)
+    1100010 = 98 = b
+    Result: B&b
+
+
+================================================================================
+UNIT 2: BINARY ARITHMETIC
+================================================================================
+
+BINARY ADDITION
+----------------
+  Rules:
+    0 + 0 = 0 (carry 0)
+    0 + 1 = 1 (carry 0)
+    1 + 0 = 1 (carry 0)
+    1 + 1 = 0 (carry 1)
+    1 + 1 + 1 = 1 (carry 1)
+
+  Example:
+      1111
+    + 1101
+    ------
+     11100
+
+
+BINARY SUBTRACTION
+-------------------
+  Rules:
+    0 - 0 = 0 (borrow 0)
+    0 - 1 = 1 (borrow 1)
+    1 - 0 = 1 (borrow 0)
+    1 - 1 = 0 (borrow 0)
+
+  Examples:
+    1101 - 1001 = 0100
+    1001 - 0111 = 0010
+
+
+BINARY MULTIPLICATION
+----------------------
+  Rules:
+    0 x 0 = 0
+    0 x 1 = 0
+    1 x 0 = 0
+    1 x 1 = 1
+
+  Example:
+        11011
+      x   101
+      -------
+        11011
+       00000x
+      11011xx
+      --------
+      10000111
+
+
+BINARY DIVISION
+----------------
+  Rules:
+    0 / 0 = Not defined
+    0 / 1 = 0
+    1 / 0 = Not defined
+    1 / 1 = 1
+
+  Example: 10010 / 11 = 110 (quotient), 00 (remainder)
+
+
+SIGNED ARITHMETIC
+------------------
+  Signed arithmetic performs arithmetic on both positive and negative values.
+  In binary, signed numbers are represented using sign bits or 2's complement format.
+
+
+2'S COMPLEMENT ARITHMETIC
+---------------------------
+ADDITION:
+  - Addition of two positives is same as normal binary addition.
+  - If both numbers are positive, result should be positive.
+  - If both numbers are negative, result should be negative.
+  - Otherwise, overflow occurs (incorrect result).
+
+SUBTRACTION:
+  1. Write both numbers in binary (same number of bits).
+  2. Take 2's complement of the number to be subtracted.
+  3. Add the 2's complement to the other number.
+  4. If there is a carry, discard it.
+  5. Result: Positive if MSB = 0; Negative (in 2's complement) if MSB = 1.
+  6. To convert back from 2's complement to normal binary, perform 2's complement again.
+
+  Example 1: 7 - 5 (4-bit)
+    7 = 0111,  5 = 0101
+    2's complement of 5: 1's complement of 0101 = 1010, add 1 -> 1011
+    0111 + 1011 = 1 0010  (discard carry)
+    Result: 0010 = 2  ✓
+
+  Example 2: 5 - 7 (4-bit)
+    5 = 0101,  7 = 0111
+    2's complement of 7: 1's complement of 0111 = 1000, add 1 -> 1001
+    0101 + 1001 = 1110
+    MSB = 1, so result is negative.
+    2's complement of 1110: 0001 + 1 = 0010 = 2
+    Result: -2  ✓
+
+
+TRUTH TABLES
+-------------
+  A truth table lists the output of a digital logic circuit for all possible input
+  combinations. Used extensively in Boolean algebra.
+
+  BUFFER:
+    Input  Output
+      0      0
+      1      1
+
+  INVERTER (NOT):
+    Input  Output
+      0      1
+      1      0
+
+  AND Gate:
+    A  B  Output
+    0  0    0
+    1  0    0
+    0  1    0
+    1  1    1
+
+  OR Gate:
+    A  B  Output
+    0  0    0
+    1  0    1
+    0  1    1
+    1  1    1
+
+  NAND Gate:
+    A  B  Output
+    0  0    1
+    1  0    1
+    0  1    1
+    1  1    0
+
+  NOR Gate:
+    A  B  Output
+    0  0    1
+    1  0    0
+    0  1    0
+    1  1    0
+
+  XOR Gate:
+    A  B  Output
+    0  0    0
+    1  0    1
+    0  1    1
+    1  1    0
+
+  XNOR Gate:
+    A  B  Output
+    0  0    1
+    1  0    0
+    0  1    0
+    1  1    1
+
+
+BOOLEAN ALGEBRA
+----------------
+  A mathematical system used to perform operations on binary values (0 and 1).
+  Foundation of digital logic design.
+
+  Three basic operations: AND, OR, NOT
+
+  AND Laws:
+    A . 0 = 0           (Null law)
+    A . 1 = A           (Identity law)
+    A . A = A
+    A . A' = 0
+
+  OR Laws:
+    A + 0 = A           (Null law)
+    A + 1 = 1           (Identity law)
+    A + A = A
+    A + A' = 1
+
+  Complementation Laws:
+    0' = 1
+    1' = 0
+    (A')' = A           (Double complementation)
+
+  Commutative Laws:
+    A + B = B + A
+    A . B = B . A
+
+  Associative Laws:
+    (A + B) + C = A + (B + C)
+    (A . B) . C = A . (B . C)
+
+  Distributive Law:
+    A . (B + C) = AB + AC
+
+  Idempotence Laws:
+    A . A = A
+    A + A = A
+
+  Absorption Laws:
+    A + A.B = A
+    A(A + B) = A
+
+  DeMorgan's Theorem:
+    (A + B)' = A'.B'
+    (AB)'    = A' + B'
+
+  Example: Complement of (XYZ)' = X' + Y' + Z'
+
+
+K-MAP (KARNAUGH MAP)
+---------------------
+  Used to simplify Boolean expressions, reducing hardware complexity.
+
+  Two forms:
+    SOP (Sum of Products): OR of multiple AND terms
+      - Groups 1s in the truth table
+      - Product terms = minterms
+      - Symbol: Sigma (Σ)
+      Example: AB + A'B + BC
+
+    POS (Product of Sums): AND of multiple OR terms
+      - Groups 0s in the truth table
+      - Sum terms = maxterms
+      - Symbol: Pi (Π)
+      Example: (A+B)(A'+B)(B+C)
+
+  For an n-variable K-Map: 2^n cells, numbered 0 to 2^n - 1
+
+  Types:
+    2-variable K-Map: 4 cells  (2^2)
+    3-variable K-Map: 8 cells  (2^3)
+    4-variable K-Map: 16 cells (2^4)
+
+  4-Variable SOP Example:
+    f(A,B,C,D) = Σ(2,3,6,7,8,10,13,15)
+    Result: f = A'C + AB'D' + ABD
+
+  4-Variable POS Example:
+    f(A,B,C,D) = Π(4,6,11,14,15)
+    Result: f = (A+B'+D)(A'+C'+D')(A'+B'+C')
+
+  3-Variable SOP Example:
+    f = Σm(1,5,2,4,7)
+    Result: B'C + AB' + AC + A'BC'
+
+
+VENN DIAGRAMS
+--------------
+  Visual representation of Boolean operations:
+  - NOT A (A'): area outside circle A
+  - A AND B: intersection of A and B (overlapping region)
+  - A OR B: entire area covered by A and B
+  - A NOR B: area outside both A and B
+  - A NAND B: everything except the intersection
+  - A XOR B: non-overlapping parts of A and B
+  - A XNOR B: intersection + area outside both (same as NOT XOR)
+
+
+================================================================================
+UNIT 3: PROBLEM SOLVING WITH COMPUTER PROGRAMMING
+================================================================================
+
+PROBLEM SOLVING
+----------------
+  Problem solving is the process of understanding a problem, breaking it into
+  smaller steps, and finding a logical solution using systematic methods.
+
+  Steps:
+    1. Understanding the problem
+    2. Analyzing the problem
+    3. Designing algorithm and flowchart
+    4. Writing code
+    5. Testing & Debugging
+    6. Updation & Maintenance
+
+
+ALGORITHM
+----------
+  A finite set of well-defined, step-by-step instructions used to solve a problem.
+  - Language independent
+  - Represented using pseudocode or flowcharts
+
+  Example – Add two numbers:
+    Step 1: Start
+    Step 2: Read two numbers A and B
+    Step 3: Compute C = A + B
+    Step 4: Display C
+    Step 5: Stop
+
+  Properties:
+    1. Input       – Zero or more clearly defined inputs
+    2. Output      – At least one well-defined output
+    3. Definiteness – Each step is clear and unambiguous
+    4. Finiteness  – Terminates after a finite number of steps
+    5. Effectiveness – Steps are simple and executable
+    6. Correctness – Produces the expected result
+    7. Generality  – Works for all valid inputs
+
+
+FLOWCHART
+----------
+  A visual diagram representing an algorithm using standard symbols.
+
+  Symbol           Shape           Purpose
+  -------          -----           -------
+  Start/End        Oval            Marks beginning or end
+  Process          Rectangle       Represents a computation/action
+  Decision         Diamond         Yes/No branching
+  Input/Output     Parallelogram   Read/Display data
+  Arrow/Flow line  Arrow           Shows direction of flow
+  Connector        Circle          Connects different parts of chart
+  Document         Document shape  Indicates a report
+
+  Flowchart Examples:
+
+  1. Largest of two numbers (A, B):
+     Start -> Read A, B -> If A>B? Yes: Print A | No: Print B -> End
+
+  2. Odd or Even:
+     Start -> Input Number -> If Number%2==0? Yes: "Even" | No: "Odd" -> End
+
+  3. Largest of three numbers (A, B, C):
+     Start -> Read A,B,C -> If A>B and A>C? Yes: Print A | No: If B>C? Yes: Print B | No: Print C -> End
+
+
+PROGRAMMING LANGUAGES
+----------------------
+  A formal language to communicate instructions to a computer.
+
+  Types:
+
+  A. Low-Level Languages (close to machine language):
+     1. Machine Language
+        - Uses 0s and 1s
+        - Directly understood by CPU
+        - Very fast but hard to write
+
+     2. Assembly Language
+        - Uses symbolic codes (ADD, MOV, SUB)
+        - Needs an Assembler to convert to machine code
+
+  B. High-Level Languages (close to human language):
+     - Examples: C, C++, Java, Python, PHP, JavaScript
+     - Easy to understand, portable
+     - Needs a Compiler or Interpreter
+
+TRANSLATORS:
+  1. Compiler   – Converts whole program at once; faster execution (C, C++, Java)
+  2. Interpreter – Translates line by line; slower execution (Python, JavaScript)
+  3. Assembler  – Converts assembly language to machine language
+
+
+BASICS OF C PROGRAMMING
+========================
+
+STRUCTURE OF C PROGRAM
+------------------------
+  1. Documentation Section  – Comments: program name, author, details
+  2. Link Section           – #include directives to link library functions
+  3. Definition Section     – #define symbolic constants
+  4. Global Declaration     – Global variables and user-defined function declarations
+  5. main() Function        – Declaration part + Executable part (required)
+  6. Sub-program Section    – User-defined functions
+
+  Template:
+    #include <stdio.h>        /* Link Section */
+    #define PI 3.14           /* Definition Section */
+    int global_var;           /* Global Declaration */
+
+    int main() {
+        /* Local declarations */
+        /* Executable statements */
+        return 0;
+    }
+
+    /* User-defined functions */
+    void myFunction() { ... }
+
+
+PROGRAM TRANSLATION PROCESS
+-----------------------------
+  Source Code
+      |
+  Preprocessor  -> Handles #include, #define, conditional compilation
+      |
+  Compiler      -> Converts to assembly code; syntax & semantic checks
+      |
+  Assembler     -> Converts assembly to object code (binary .obj/.o)
+      |
+  Linker        -> Combines object files + libraries -> Executable (.exe/a.out)
+      |
+  Loader        -> OS loads executable into memory; program starts running
+
+
+DATA TYPES IN C
+----------------
+  PRIMARY:
+    Data Type    Description                   Example
+    ---------    -----------                   -------
+    int          Stores integers               10, -5
+    float        Single-precision decimal      3.14
+    double       Double-precision decimal      3.141592
+    char         Single character              'A', '5'
+
+  DERIVED:
+    Array, Pointer, Function, Structure/Function Pointer
+
+  USER-DEFINED:
+    struct  – Group of different data types under one name
+    union   – Similar to struct but shares memory
+    enum    – Named set of integer constants
+
+  VOID:
+    void    – No value; used for functions returning nothing
+
+  INTEGER DATA TYPE RANGES (32-bit GCC):
+    short int          2 bytes    -32,768 to +32,767
+    unsigned short     2 bytes    0 to 65,535
+    int                4 bytes    -2,147,483,648 to +2,147,483,647
+    unsigned int       4 bytes    0 to 4,294,967,295
+    long int           4 or 8 bytes
+    long long int      8 bytes    -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+    unsigned long long 8 bytes    0 to 18,446,744,073,709,551,615
+
+  FLOATING POINT:
+    float         4 bytes    ~3.4E-38 to 3.4E+38       6 digits precision
+    double        8 bytes    ~1.7E-308 to 1.7E+308      15 digits precision
+    long double   10/16 bytes Very large                18+ digits precision
+
+  CHAR:
+    char          1 byte    -128 to +127 (signed) OR 0 to 255 (unsigned)
+    signed char   1 byte    -128 to 127
+    unsigned char 1 byte    0 to 255
+
+FORMAT SPECIFIERS:
+    %d   – Integer          %f  – Float/double
+    %c   – Character        %s  – String
+    %u   – Unsigned int     %lf – Double
+    %x   – Hexadecimal      %o  – Octal
+
+
+KEYWORDS IN C (32 total)
+--------------------------
+  auto     break    case     char     const    continue
+  default  do       double   else     enum     extern
+  float    for      goto     if       int      long
+  register return   short    signed   sizeof   static
+  struct   switch   typedef  union    unsigned void
+  volatile while
+
+
+IDENTIFIERS
+------------
+  Names given to variables, functions, arrays, etc.
+
+  Rules:
+    - Must begin with a letter or underscore (_)
+    - Cannot start with a digit
+    - Can contain letters, digits, and underscores
+    - No spaces allowed
+    - Case-sensitive (Age ≠ age)
+    - Cannot use C keywords
+
+  Valid: value2, _count, total_marks
+  Invalid: 2value, int (keyword), total marks (space)
+
+  Difference from Keywords:
+    Keywords: Reserved by C, predefined meaning (int, while)
+    Identifiers: Created by programmer, no predefined meaning (age, sum)
+
+
+VARIABLES
+----------
+  A named memory location to store data that can change during execution.
+
+  Characteristics:
+    - Value can be changed at any time
+    - Must be declared before use
+    - Has a data type
+    - Occupies memory space
+
+  Declaration:     int marks;
+  Initialization:  age = 25;
+  Combined:        int age = 25;
+                   float salary = 50000.75;
+                   char grade = 'A';
+
+  Note: Global variables auto-initialized to 0. Local variables contain
+  garbage values if not initialized.
+
+
+CONSTANTS
+----------
+  A fixed value that does not change during execution.
+
+  Types:
+    - Integer constant
+    - Floating-point constant
+    - Character constant
+    - String constant
+    - Escape sequence constant
+    - Symbolic constant
+
+  Escape Sequences:
+    \n  – New line      \t  – Tab space
+    \'  – Single quote  \"  – Double quote
+    \\  – Backslash
+
+  Symbolic Constants:
+    #define PI 3.14       // using #define
+    #define MAX 100
+    const int MAX = 100;  // using const keyword
+    const float PI = 3.14;
+
+
+TOKENS
+-------
+  The smallest individual elements of a C program (building blocks).
+  Types: Keywords, Identifiers, Constants, Operators, Strings, Special Symbols
+
+
+OPERATORS
+----------
+  A symbol that tells the compiler to perform a specific operation.
+
+  1. ARITHMETIC OPERATORS:
+     +  Addition     -  Subtraction   *  Multiplication
+     /  Division     %  Modulus (remainder)
+
+  2. RELATIONAL OPERATORS:
+     ==  Equal to         !=  Not equal to
+     >   Greater than     <   Less than
+     >=  Greater or equal <=  Less or equal
+
+  3. LOGICAL OPERATORS:
+     &&  Logical AND      ||  Logical OR      !  Logical NOT
+
+  4. ASSIGNMENT OPERATORS:
+     =   Assign           +=  Add and assign      -=  Subtract and assign
+     *=  Multiply         /=  Divide              %=  Modulus and assign
+
+  5. INCREMENT/DECREMENT:
+     ++  Increment by 1   --  Decrement by 1
+     Pre-increment: ++a (increments then uses)
+     Post-increment: a++ (uses then increments)
+
+  6. CONDITIONAL (TERNARY) OPERATOR:
+     condition ? expression1 : expression2
+     Example: result = (age >= 18) ? "Adult" : "Minor";
+
+  7. BITWISE OPERATORS:
+     &  AND    |  OR    ^  XOR    <<  Left shift    >>  Right shift    ~  NOT
+
+  8. SPECIAL OPERATORS:
+     ,        Comma (separates variables/expressions)
+     sizeof() Returns memory size of a data type
+     &        Address-of operator
+     *        Dereference (pointer) operator
+
+OPERATOR PRECEDENCE (High to Low):
+  Level 1: ()                    – Parentheses (Left to Right)
+  Level 2: ++ -- ! ~ + - (unary) – Unary operators (Right to Left)
+  Level 3: * / %                 – Multiplicative (Left to Right)
+  Level 4: + -                   – Additive (Left to Right)
+  Level 5: < <= > >=             – Relational (Left to Right)
+  Level 6: == !=                 – Equality (Left to Right)
+  Level 7: &&                    – Logical AND (Left to Right)
+  Level 8: ||                    – Logical OR (Left to Right)
+  Level 9: =, +=, -=, etc.       – Assignment (Right to Left)
+
+Sample Questions:
+  Q: int a=5,b=2; printf("%d", a++ + ++b);   ANS: 8
+  Q: if(a==0) ... else printf("Hello");       ANS: Hello
+
+
+DECISION MAKING STATEMENTS (BRANCHING)
+----------------------------------------
+  Used to choose which statements to execute based on a condition.
+
+  1. IF STATEMENT:
+     if (condition) {
+         // statements
+     }
+     Example: if(marks>50) { printf("Pass"); }
+
+  2. IF-ELSE STATEMENT:
+     if (condition) {
+         // true block
+     } else {
+         // false block
+     }
+     Example: if (num%2==0) printf("Even"); else printf("Odd");
+
+  3. ELSE-IF LADDER:
+     if (condition1) { ... }
+     else if (condition2) { ... }
+     else if (condition3) { ... }
+     else { ... }
+
+  4. NESTED IF:
+     if (a > 0) {
+         if (a % 2 == 0) {
+             printf("Positive even number");
+         }
+     }
+
+  5. SWITCH STATEMENT:
+     switch(expression) {
+         case 1: // statements; break;
+         case 2: // statements; break;
+         default: // statements;
+     }
+     - Works with integers and characters
+     - break exits the switch
+
+
+LOOP STATEMENTS
+----------------
+  A loop repeatedly executes a block of code while a condition is true.
+
+  1. FOR LOOP (when number of iterations is known):
+     for (initialization; condition; increment/decrement) {
+         // loop body
+     }
+     Example: for (int i=1; i<=5; i++) { printf("%d ", i); }
+
+  2. WHILE LOOP (when iterations are not known beforehand — entry-controlled):
+     while (condition) {
+         // loop body
+     }
+     Example: int i=1; while(i<=5) { printf("%d ",i); i++; }
+
+  3. DO-WHILE LOOP (executes at least once — exit-controlled):
+     do {
+         // loop body
+     } while (condition);
+     Example: int i=1; do { printf("%d ",i); i++; } while(i<=5);
+
+
+JUMP STATEMENTS
+----------------
+  Transfer control from one part of the program to another.
+
+  1. goto    – Unconditionally transfers control to a labeled statement
+  2. break   – Exits a loop or switch immediately
+  3. continue – Skips current iteration, moves to next iteration
+  4. return  – Exits a function and optionally returns a value
+
+  goto Example:
+    if (num == 3) goto print;
+    printf("This will be skipped");
+    print: printf("Number is 3");
+
+  break Example:
+    for (int i=1; i<=5; i++) {
+        if (i==3) break;
+        printf("%d ", i);  // prints 1 2
+    }
+
+  continue Example:
+    for (int i=1; i<=5; i++) {
+        if (i==3) continue;
+        printf("%d ", i);  // prints 1 2 4 5
+    }
+
+
+FUNCTIONS
+----------
+  A block of code that performs a specific task.
+
+  Advantages:
+    - Reusability: write once, use many times
+    - Modularity: clean and organized code
+    - Easy debugging
+    - Code readability
+    - Memory efficiency
+
+  Types:
+    1. Library Functions  – Predefined in header files (printf, scanf, sqrt)
+    2. User-defined Functions – Created by the programmer
+
+  Common Header Files:
+    stdio.h    printf(), scanf(), gets(), puts(), fopen(), fclose()
+    stdlib.h   malloc(), free(), atoi(), exit()
+    string.h   strlen(), strcpy(), strcat(), strcmp()
+    math.h     sqrt(), pow(), abs(), floor()
+    ctype.h    isalpha(), isdigit(), toupper(), tolower()
+    time.h     time(), clock(), difftime()
+
+  Structure of a Function:
+    1. Declaration (Prototype): return_type function_name(parameter_list);
+    2. Definition:              return_type function_name(parameter_list) { body }
+    3. Function Call:           function_name(arguments);
+
+  Example:
+    void greet();         // Declaration
+    int main() {
+        greet();          // Call
+        return 0;
+    }
+    void greet() {        // Definition
+        printf("Hello!");
+    }
+
+  Categories:
+    1. No arguments, no return value
+    2. Arguments, no return value
+    3. No arguments, return value
+    4. Arguments and return value
+
+PARAMETERS vs ARGUMENTS:
+  Parameters: variables in function definition (formal parameters)
+    void add(int a, int b) { ... }  // a, b are parameters
+  Arguments: actual values passed when calling (actual parameters)
+    add(5, 10);  // 5, 10 are arguments
+
+CALL BY VALUE:
+  A copy of the actual value is passed. Original variable NOT affected.
+  void change(int x) { x = 50; }
+  int a = 10; change(a); // a still = 10
+
+CALL BY REFERENCE:
+  The address (pointer) is passed. Original variable IS affected.
+  void change(int *x) { *x = 50; }
+  int a = 10; change(&a); // a becomes 50
+
+MODULARITY:
+  Splitting a big program into smaller independent units (functions).
+  Each function has a single responsibility.
+  Benefits: Easy to understand, debug, update, and reuse.
+
+RECURSION:
+  A function that calls itself to solve a problem.
+  Must have a base condition to stop infinite calls.
+
+  Example: Factorial
+    int fact(int n) {
+        if (n == 0) return 1;        // Base condition
+        return n * fact(n - 1);      // Recursive call
+    }
+    fact(3) -> 3 * fact(2) -> 3 * 2 * fact(1) -> 3 * 2 * 1 * fact(0) -> 6
+
+  Use cases: Factorial, Fibonacci, Tree/graph traversal, Searching, Sorting
+
+SCOPE OF FUNCTIONS/VARIABLES:
+  - Local scope: Variables inside a function; accessible only within that function.
+  - Global scope: Variables outside all functions; accessible anywhere in the file.
+  - Functions have file scope; visible anywhere in the file after their prototype.
+  - Use 'extern' keyword for multi-file function access.
+
+
+ARRAYS
+-------
+  A collection of elements of the same data type, stored in contiguous memory,
+  accessed using a common name and index.
+
+  Features:
+    - Same data type for all elements
+    - Contiguous memory allocation
+    - Index starts from 0
+    - Fixed size (cannot change at runtime)
+
+  ONE-DIMENSIONAL ARRAY:
+    Declaration:        int marks[5];
+    Initialization:     int marks[5] = {10, 20, 30, 40, 50};
+    Partial init:       int a[5] = {1, 2}; // rest become 0
+    Index-wise:         marks[0] = 20; marks[1] = 40;
+
+    Indexing: arr[0]=10, arr[1]=20, ..., arr[4]=50  (arr[5] is invalid/out of range)
+
+    Input & Output Example:
+      for(i=0; i<5; i++) scanf("%d", &a[i]);
+      for(i=0; i<5; i++) printf("%d ", a[i]);
+
+  TWO-DIMENSIONAL ARRAY:
+    Declaration:   int matrix[2][3];
+    Initialization:
+      int matrix[2][3] = { {1,2,3}, {4,5,6} };
+      or: int matrix[2][3] = {1,2,3,4,5,6};
+
+    Access element: matrix[row][column]
+
+
+POINTERS
+---------
+  A pointer is a variable that stores the memory address of another variable.
+
+  Declaration:    int *p;
+  Initialization: int a = 10; int *p = &a;  // p stores address of a
+
+  Operators:
+    & (Address-of):   p = &a;          // p gets the address of a
+    * (Dereference):  printf("%d",*p); // prints value at address stored in p
+
+  Example:
+    int a = 10;        // stored at address 1004
+    int *p;
+    p = &a;            // p = 1004
+    *p = 20;           // a becomes 20
+
+
+STRUCTURES
+-----------
+  A user-defined data type that groups different types of data under one name.
+
+  Declaring:
+    struct Student {
+        int age;
+        float marks;
+        char name[20];
+    };
+
+  Declaring Variables:
+    struct Student s1;
+
+  Accessing Members (dot operator):
+    s1.age = 18;
+    s1.marks = 95.4;
+
+
+UNION
+------
+  A user-defined data type where all members share the same memory location.
+  Only one member can hold a value at a time.
+
+  Syntax:
+    union UnionName { int a; float b; char c; };
+
+  Creating variable: union Student s1;
+  Access: s1.id = 101;  (assigning to one member overwrites others)
+
+  Difference from Struct:
+    Feature        Structure                    Union
+    Memory         Separate for each member     Shared (size of largest member)
+    Value Storage  All members hold values      Only one at a time
+    Use Case       Multiple data fields         Memory saving
+
+
+ENUM
+-----
+  User-defined type that assigns meaningful names to a set of integer constants.
+
+  Example:
+    enum Day { MON, TUE, WED, THU, FRI, SAT, SUN };
+    enum Day today = WED;
+    printf("%d", today);  // Output: 2  (MON=0, TUE=1, WED=2, ...)
+
+
+STRINGS
+--------
+  A sequence of characters ending with a null character '\0'.
+
+  Declaration:     char str[20];
+  Initialization:  char str[] = "Hello";
+
+  String Functions (in <string.h>):
+    strlen(str)           – Length of string
+    strcpy(dest, src)     – Copy string
+    strcat(str1, str2)    – Concatenate strings
+    strcmp(str1, str2)    – Compare strings
+    strrev(str)           – Reverse string (non-standard)
+
+
+FILE HANDLING
+--------------
+  Allows programs to store data permanently on disk.
+
+  Steps:
+    1. Open file using fopen()
+    2. Perform read/write operations
+    3. Close file using fclose()
+
+  FILE *fp = fopen("data.txt", "r");
+  fclose(fp);
+
+  File Modes:
+    "r"   – Read only (file must exist)
+    "w"   – Write only (creates new or overwrites)
+    "a"   – Append (write at end)
+    "r+"  – Read and write (file must exist)
+    "w+"  – Read and write (creates new or overwrites)
+    "a+"  – Read and append
+
+  Reading Functions:    fgetc(), fgets(), fscanf()
+  Writing Functions:    fputc(), fputs(), fprintf()
+  Other Functions:      feof() (check end of file)
+
+
+================================================================================
+ALGORITHM DESIGN TECHNIQUES & PROBLEM SOLVING
+================================================================================
+
+ALGORITHM DESIGN TECHNIQUES
+-----------------------------
+  1. Brute Force
+  2. Divide & Conquer
+  3. Greedy Technique
+  4. Dynamic Programming
+  5. Branch & Bound
+  6. Backtracking
+
+PROBLEM TYPES:
+  Sorting, Searching, String Processing, Graph Problems,
+  Combinational Problems, Geometric Problems, Numerical Problems
+
+
+BRUTE FORCE
+-----------
+  Tries all possible solutions until correct one is found. (Exhaustive Search)
+  No shortcuts – checks every option. Easy but slow for large inputs.
+
+  Problems: Selection Sort, Linear Search, String Matching,
+            Travelling Salesman Problem, Password Cracking,
+            Finding Maximum/Minimum, Generating Permutations/Combinations
+
+
+DIVIDE AND CONQUER
+-------------------
+  Breaks a big problem into smaller sub-problems, solves recursively,
+  combines results.
+
+  Problems: Merge Sort, Quick Sort, Binary Search, Matrix Multiplication
+
+
+GREEDY METHOD
+--------------
+  At each step, choose the best possible (locally optimal) choice.
+  Hopes local best choices lead to global best solution.
+  Faster and simpler than Divide & Conquer and Dynamic Programming.
+
+  Problems: Knapsack Problem, Prim's, Kruskal's,
+            Job Sequencing/Scheduling, Dijkstra's Shortest Path
+
+
+DYNAMIC PROGRAMMING
+--------------------
+  Breaks problems into smaller sub-problems and stores results to avoid
+  recalculation (memoization). Works when there are overlapping subproblems
+  and optimal substructure.
+
+  Problems: Shortest Path, Knapsack Problem, Fibonacci Numbers
+
+
+BRANCH AND BOUND
+-----------------
+  For optimization problems. Explores solutions smartly, uses bounds to prune
+  branches that can't lead to a better solution.
+
+  Problems: 8-Puzzle, Travelling Salesman Problem, Graph Coloring
+
+
+BACKTRACKING
+------------
+  Tries all possible solutions but abandons (backtracks) early when a choice
+  is invalid. Systematic search with pruning.
+
+  Problems: N-Queens, Sum of Subset, Sudoku Solver,
+            Hamiltonian Cycle, Graph Coloring
+
+
+================================================================================
+TIME COMPLEXITIES
+================================================================================
+
+SEARCHING ALGORITHMS:
+  Algorithm       Best Case   Average Case   Worst Case
+  -----------     ---------   ------------   ----------
+  Linear Search   O(1)        O(n)           O(n)
+  Binary Search   O(1)        O(log n)       O(log n)
+
+SORTING ALGORITHMS:
+  Algorithm       Best Case    Average Case   Worst Case
+  -----------     ---------    ------------   ----------
+  Bubble Sort     O(n)         O(n²)          O(n²)
+  Selection Sort  O(n²)        O(n²)          O(n²)
+  Insertion Sort  O(n)         O(n²)          O(n²)
+  Merge Sort      O(n log n)   O(n log n)     O(n log n)
+  Quick Sort      O(n log n)   O(n log n)     O(n²)
+  Heap Sort       O(n log n)   O(n log n)     O(n log n)
+  Counting Sort   O(n+k)       O(n+k)         O(n+k)
+  Radix Sort      O(nk)        O(nk)          O(nk)
+
+TREE AND GRAPH ALGORITHMS:
+  Algorithm                  Time Complexity
+  ---------                  ---------------
+  DFS                        O(V + E)
+  BFS                        O(V + E)
+  Dijkstra's Algorithm       O((V+E) log V)
+  Prim's Algorithm           O((V+E) log V)
+  Kruskal's Algorithm        O(E log V)
+
+DIVIDE AND CONQUER:
+  Binary Search    O(log n)
+  Merge Sort       O(n log n)
+  Quick Sort       O(n log n) avg, O(n²) worst
+
+DYNAMIC PROGRAMMING:
+  Fibonacci (DP)             O(n)
+  LCS                        O(n × m)
+  Knapsack (0/1)             O(nW)
+
+HASHING:
+  Insert / Search / Delete   O(1) average
+
+
+================================================================================
+C vs C++
+================================================================================
+
+  Feature                C                     C++
+  -------                -                     ---
+  Paradigm               Procedural            Procedural + OOP + Generic
+  Approach               Top-down              Bottom-up
+  Encapsulation          Not supported         Supported (classes)
+  Data Hiding            No                    Yes (access specifiers)
+  Function Overloading   No                    Yes
+  Operator Overloading   No                    Yes
+  Inheritance            No                    Yes
+  Polymorphism           No                    Yes
+  Exception Handling     No                    Yes (try/catch)
+  Memory Allocation      malloc()/free()       new/delete
+  Namespace              No                    Yes (namespace std)
+  I/O                    printf(), scanf()     cout, cin
+  Templates              No                    Yes
+  Speed                  Faster (low-level)    Slightly slower
+  Uses                   Systems, OS, embedded Apps, games, compilers, OOP
+
+
+================================================================================
+OBJECT-ORIENTED PROGRAMMING (OOP)
+================================================================================
+
+  OOP organizes software into objects that combine data and functions.
+  Models real-world entities (Student, Car, BankAccount) as objects.
+
+  Class:  Blueprint/template defining data members and functions.
+  Object: Real-world entity created from a class.
+          Example: Car myCar;  (Car is class, myCar is object)
+
+  FOUR PILLARS OF OOP:
+
+  1. ENCAPSULATION
+     Wrapping data (variables) and functions (methods) together into a class.
+
+  2. ABSTRACTION
+     Showing only essential features; hiding complex internal details.
+
+  3. INHERITANCE
+     Child/derived class acquires properties of parent/base class.
+     Types: Single, Multilevel, Multiple, Hierarchical, Hybrid
+
+  4. POLYMORPHISM
+     Same function or operator behaves differently based on context.
+
+     Compile-time Polymorphism:
+       - Function overloading
+       - Operator overloading
+
+     Runtime Polymorphism:
+       - Function overriding using virtual functions
+
+     Example: area() behaves differently for Circle, Triangle, Rectangle classes.
+
+
+===========================================================================
+
+DIGITAL LOGIC & COMPUTER ARCHITECTURE
+=====================================
+
+COMPUTER ARCHITECTURE vs COMPUTER ORGANIZATION
+----------------------------------------------
+  Computer Architecture
+    - What the computer does
+    - Logical design and functionality
+    - Instruction set, data types, addressing modes
+    - Programmer visible
+
+  Computer Organization
+    - How the computer is implemented
+    - Hardware structure and components
+    - Registers, ALU, Memory, Buses
+    - Hardware oriented
+
+
+===============================================================================
+LOGIC GATES
+===============================================================================
+
+  Logic Gate:
+    Basic digital circuit that performs logical operations on binary inputs.
+
+  Inputs  : 0 or 1
+  Output  : 0 or 1
+
+BASIC GATES
+-----------
+
+  AND Gate
+    Output = 1 only when all inputs are 1
+    Expression: Y = A.B
+
+  OR Gate
+    Output = 1 if any input is 1
+    Expression: Y = A + B
+
+  NOT Gate
+    Output = Opposite of input
+    Expression: Y = A'
+
+
+UNIVERSAL GATES
+---------------
+
+  NAND Gate
+    Output = NOT of AND
+    Expression: Y = (A.B)'
+
+  NOR Gate
+    Output = NOT of OR
+    Expression: Y = (A+B)'
+
+  Note:
+    Any logic circuit can be implemented using only NAND gates
+    or only NOR gates.
+
+
+DERIVED GATES
+-------------
+
+  XOR Gate
+    Output = 1 when inputs are different
+    Expression: Y = A ⊕ B
+    Application: Half Adder
+
+  XNOR Gate
+    Output = 1 when inputs are same
+    Expression: Y = (A ⊕ B)'
+
+
+GATE SUMMARY
+------------
+
+  AND   -> All inputs must be 1
+  OR    -> Any input is 1
+  NOT   -> Inverts input
+  NAND  -> NOT of AND
+  NOR   -> NOT of OR
+  XOR   -> Inputs different
+  XNOR  -> Inputs same
+
+
+===============================================================================
+COMBINATIONAL LOGIC CIRCUITS
+===============================================================================
+
+  Output depends only on present inputs.
+
+  Characteristics:
+    - No memory
+    - No feedback path
+    - Time independent
+    - Built using logic gates
+
+  Examples:
+    Half Adder
+    Full Adder
+    Half Subtractor
+    Full Subtractor
+    Multiplexer
+    Demultiplexer
+    Encoder
+    Decoder
+
+
+HALF ADDER
+----------
+
+  Adds two binary bits.
+
+  Inputs:
+    A, B
+
+  Outputs:
+    Sum, Carry
+
+  Formula:
+    Sum   = A ⊕ B
+    Carry = A.B
+
+  Limitation:
+    Cannot handle previous carry.
+
+
+FULL ADDER
+----------
+
+  Adds three binary bits.
+
+  Inputs:
+    A, B, Cin
+
+  Outputs:
+    Sum, Cout
+
+  Formula:
+    Sum   = A ⊕ B ⊕ Cin
+    Carry = AB + ACin + BCin
+
+  Advantages:
+    - Handles carry input
+    - Used in multi-bit addition
+
+  Built Using:
+    Two Half Adders + One OR Gate
+
+
+HALF SUBTRACTOR
+---------------
+
+  Subtracts one binary digit from another.
+
+  Inputs:
+    A, B
+
+  Outputs:
+    Difference, Borrow
+
+  Formula:
+    Difference = A ⊕ B
+    Borrow     = A'.B
+
+
+FULL SUBTRACTOR
+---------------
+
+  Subtracts three bits including borrow.
+
+  Inputs:
+    A, B, Bin
+
+  Outputs:
+    Difference, Borrow Out
+
+  Application:
+    Binary subtraction in ALU
+
+
+MULTIPLEXER (MUX)
+-----------------
+
+  Data Selector
+
+  Selects one input from many inputs.
+
+  Key Formula:
+    Select Lines = log₂(Number of Inputs)
+
+  Applications:
+    - Data Routing
+    - CPU Instruction Selection
+
+  Types:
+
+    2:1 MUX   -> 2 Inputs, 1 Select Line
+    4:1 MUX   -> 4 Inputs, 2 Select Lines
+    8:1 MUX   -> 8 Inputs, 3 Select Lines
+    16:1 MUX  -> 16 Inputs, 4 Select Lines
+    32:1 MUX  -> 32 Inputs, 5 Select Lines
+
+
+DEMULTIPLEXER (DEMUX)
+---------------------
+
+  Data Distributor
+
+  Routes one input to one of many outputs.
+
+  Applications:
+    - Data Distribution
+    - Communication Systems
+
+  Types:
+
+    1:2 DEMUX   -> 2 Outputs, 1 Select Line
+    1:4 DEMUX   -> 4 Outputs, 2 Select Lines
+    1:8 DEMUX   -> 8 Outputs, 3 Select Lines
+    1:16 DEMUX  -> 16 Outputs, 4 Select Lines
+    1:32 DEMUX  -> 32 Outputs, 5 Select Lines
+
+
+ENCODER
+-------
+
+  Converts multiple inputs into coded binary output.
+
+  Example:
+    4 Inputs -> 2 Outputs
+
+  Applications:
+    - Keyboard Encoding
+    - Data Compression
+
+  Note:
+    Only one input should be active at a time.
+
+
+DECODER
+-------
+
+  Converts binary input code into multiple outputs.
+
+  Example:
+    2 Inputs -> 4 Outputs
+
+  Applications:
+    - Memory Address Decoding
+    - Display Systems
+
+  Note:
+    Only one output is active for each input combination.
+
+
+===============================================================================
+SEQUENTIAL LOGIC CIRCUITS
+===============================================================================
+
+  Output depends on:
+    - Present Input
+    - Previous Output (Memory)
+
+  Why Needed?
+    Combinational circuits cannot store data.
+
+  Memory Elements:
+    1. Latches
+    2. Flip-Flops
+
+
+LATCH
+-----
+
+  Stores 1 bit.
+
+  Characteristics:
+    - No clock
+    - Simple design
+
+  Limitation:
+    Output changes whenever input changes.
+
+
+CLOCK
+-----
+
+  Timing signal used in sequential circuits.
+
+  Functions:
+    - Synchronizes operations
+    - Controls flip-flops
+    - Prevents unpredictable outputs
+
+  Clock Signal:
+    Periodic square wave
+
+
+SR LATCH
+--------
+
+  First memory element.
+
+  Limitation:
+    Invalid state when S = R = 1
+
+  Improvement:
+    SR Flip-Flop
+
+
+FLIP-FLOPS
+----------
+
+  Clock-controlled memory devices.
+
+  Advantages:
+    - Stable output
+    - Edge triggered
+    - Controlled data changes
+
+
+SR FLIP-FLOP
+------------
+
+  Improvement over SR Latch.
+
+  Features:
+    - Clock controlled
+
+  Limitation:
+    Invalid state still exists
+
+  Improvement:
+    JK Flip-Flop
+
+
+JK FLIP-FLOP
+------------
+
+  Removes invalid state of SR Flip-Flop.
+
+  Features:
+    J = K = 1 -> Toggle
+
+  Advantages:
+    - No undefined state
+
+  Limitation:
+    More complex
+    Higher delay
+
+  Improvement:
+    D Flip-Flop
+
+
+D FLIP-FLOP
+-----------
+
+  Data Flip-Flop
+
+  Advantages:
+    - Single input
+    - No invalid state
+    - Safe data storage
+
+  Limitation:
+    Cannot toggle directly
+
+  Improvement:
+    T Flip-Flop
+
+
+T FLIP-FLOP
+-----------
+
+  Toggle Flip-Flop
+
+  Purpose:
+    Efficient counting
+
+  Limitation:
+    Not suitable for data storage
+
+
+===============================================================================
+REGISTERS
+===============================================================================
+
+  Group of Flip-Flops.
+
+  Why Needed?
+    Flip-Flop stores only 1 bit.
+    Computers need to store multiple bits.
+
+  Advantages:
+    - Parallel data storage
+
+  Types:
+    - Shift Register
+    - Serial Register
+    - Parallel Register
+
+  Limitation:
+    Limited storage capacity
+
+
+===============================================================================
+COUNTERS
+===============================================================================
+
+  Used to count events or clock pulses.
+
+ASYNCHRONOUS (RIPPLE) COUNTER
+-----------------------------
+
+  Advantages:
+    - Simple design
+
+  Limitation:
+    - Delay accumulates
+    - Slower operation
+
+  Improvement:
+    Synchronous Counter
+
+
+SYNCHRONOUS COUNTER
+-------------------
+
+  Advantages:
+    - Faster operation
+    - All flip-flops triggered together
+
+  Limitation:
+    - Requires more hardware
+
+
+================================================================================
+                     LBS MCA ENTRANCE EXAM - COMPLETE STUDY NOTES
+         Computer Science | Data Representation | C Programming | Digital Logic
+================================================================================
+
+================================================================================
+UNIT 1 : DATA REPRESENTATION
+================================================================================
+
+DEFINITION
+----------
+  Data representation refers to the methods used to represent information
+  (numbers, characters, symbols) in binary form (0s and 1s) that can be
+  stored, processed, and understood by a computer.
+
+
+NUMBER SYSTEMS
+--------------
+  Base   System         Digits Used
+  ----   ----------     -----------
+  2      Binary         0, 1
+  8      Octal          0 to 7
+  10     Decimal        0 to 9
+  16     Hexadecimal    0 to 9 and A to F
+
+
+DECIMAL TO BINARY CONVERSION
+-----------------------------
+  Integer Part:
+    1. Divide by 2; record remainder.
+    2. Repeat until quotient is 0.
+    3. Read remainders from bottom to top.
+
+    Example: (27)10
+      27/2 = 13 r 1  (LSB)
+      13/2 =  6 r 1
+       6/2 =  3 r 0
+       3/2 =  1 r 1
+       1/2 =  0 r 1  (MSB)
+      Result: (27)10 = (11011)2
+
+  Fractional Part:
+    1. Multiply by 2; record integer part.
+    2. Repeat until fraction = 0 or desired precision.
+    3. Read integer parts in sequence.
+
+    Example: (0.65)10
+      0.65 x 2 = 1.3  -> 1
+      0.30 x 2 = 0.6  -> 0
+      0.60 x 2 = 1.2  -> 1
+      Result: (0.65)10 ≈ (0.101...)2
+
+  Combined Example: (17.8)10 = (10001.1100)2
+
+
+BINARY TO DECIMAL CONVERSION
+-----------------------------
+  Integer Part:  Multiply each bit by 2^position (rightmost = 2^0), sum all.
+    Example: (101010)2 = 32+0+8+0+2+0 = 42
+
+  Fractional Part: Multiply each bit by 2^(-position), sum all.
+    Example: (0.1101)2 = 0.5+0.25+0+0.0625 = 0.8125
+
+
+HEXADECIMAL ↔ BINARY CONVERSION
+---------------------------------
+  Each hex digit = 4-bit binary group.
+
+  Hex   Binary      Hex   Binary
+  ---   ------      ---   ------
+  0     0000         8    1000
+  1     0001         9    1001
+  2     0010         A    1010
+  3     0011         B    1011
+  4     0100         C    1100
+  5     0101         D    1101
+  6     0110         E    1110
+  7     0111         F    1111
+
+  Hex to Binary: Replace each hex digit with its 4-bit binary.
+    Example: (3A)16 -> 0011 1010 = (00111010)2
+
+  Binary to Hex: Group bits in 4s from right; replace each group.
+    Example: (1111011011)2 -> 0011 1101 1011 = (3DB)16
+
+
+BINARY ↔ OCTAL CONVERSION
+--------------------------
+  Binary to Octal: Group bits in 3s from right; replace each group.
+    Example: (111101101)2 -> 111 101 101 = (755)8
+
+  Octal to Binary: Replace each octal digit with its 3-bit binary.
+    Example: (153)8 -> 001 101 011 = (001101011)2
+
+
+DECIMAL ↔ OCTAL CONVERSION
+----------------------------
+  Decimal to Octal: Divide by 8; record remainders bottom to top.
+    Example: (10.25)10 = (12.2)8
+
+  Octal to Decimal: Multiply each digit by 8^position, sum all.
+    Example: (12.2)8 -> 1x8 + 2x1 + 2x(1/8) = 10.25
+
+
+DECIMAL ↔ HEXADECIMAL CONVERSION
+----------------------------------
+  Decimal to Hex: Divide by 16; record remainders (0-9 or A-F) bottom to top.
+  Hex to Decimal: Multiply each digit by 16^position, sum all.
+    Example: (A.4)16 -> 10x1 + 4x(1/16) = 10.25
+
+
+REPRESENTATION OF INTEGERS
+---------------------------
+  1. Sign and Magnitude:
+     - MSB = sign bit (0 = positive, 1 = negative)
+     - Example: +4 = 00000100,  -4 = 10000100
+
+  2. 1's Complement:
+     - Flip all bits of the number.
+     - Example: +9 = 00001001,  -9 = 11110110
+
+  3. 2's Complement (most widely used):
+     - Take 1's complement, then add 1.
+     - Example: +9 = 00001001,  -9 = 11110111
+
+  4. BCD (Binary Coded Decimal):
+     - Each decimal digit (0-9) converted to 4-bit binary.
+     Decimal  BCD       Decimal  BCD
+       0      0000         5     0101
+       1      0001         6     0110
+       2      0010         7     0111
+       3      0011         8     1000
+       4      0100         9     1001
+
+
+FLOATING POINT REPRESENTATION (IEEE 754)
+-----------------------------------------
+  32-bit: 1 sign bit + 8 exponent bits + 23 mantissa bits
+  64-bit: 1 sign bit + 11 exponent bits + 52 mantissa bits
+
+  Format:  Number = 1.mantissa x 2^(exponent)
+  Bias:    127 for 32-bit;  1023 for 64-bit
+
+  Example: Convert 7.25 to 32-bit IEEE 754
+    Step 1: 7.25 = 111.01 (binary)
+    Step 2: Normalize: 1.1101 x 2^2
+    Step 3: Sign = 0 (positive)
+            Exponent = 2 + 127 = 129 = 10000001
+            Mantissa = 11010000000000000000000 (23 bits)
+    Result: 0  10000001  11010000000000000000000
+
+
+REPRESENTATION OF CHARACTERS
+------------------------------
+  1. ASCII         - 7-bit; 128 characters (0-127)
+  2. Extended ASCII - 8-bit; 256 characters (0-255)
+  3. EBCDIC        - 8-bit; IBM standard; incompatible with ASCII
+  4. ISCII         - 8-bit; for Indian languages
+  5. Unicode       - 16-bit; 65,536 characters; covers all world languages
+
+  ASCII Key Values:
+    A=65, B=66, ..., Z=90
+    a=97, b=98, ..., z=122
+    Space=32,  0=48, 1=49, ..., 9=57
+
+
+================================================================================
+UNIT 2 : BINARY ARITHMETIC
+================================================================================
+
+BINARY ADDITION
+---------------
+  Rules:
+    0 + 0 = 0  (carry 0)
+    0 + 1 = 1  (carry 0)
+    1 + 0 = 1  (carry 0)
+    1 + 1 = 0  (carry 1)
+    1 + 1 + 1 = 1  (carry 1)
+
+  Example:  1111 + 1101 = 11100
+
+
+BINARY SUBTRACTION
+------------------
+  Rules:
+    0 - 0 = 0   (borrow 0)
+    0 - 1 = 1   (borrow 1)
+    1 - 0 = 1   (borrow 0)
+    1 - 1 = 0   (borrow 0)
+
+  Examples:
+    1101 - 1001 = 0100
+    1001 - 0111 = 0010
+
+
+BINARY MULTIPLICATION
+---------------------
+  Rules: Same as decimal but with binary digits.
+    1 x 1 = 1  (all other combinations = 0)
+
+  Example:  11011 x 101 = 10000111
+
+
+BINARY DIVISION
+---------------
+  0/1=0, 1/1=1, 0/0 and 1/0 = Not defined
+  Example: 10010 / 11 = 110 (quotient), 00 (remainder)
+
+
+2'S COMPLEMENT ARITHMETIC
+--------------------------
+  SUBTRACTION using 2's complement:
+    1. Write both numbers in binary (same number of bits).
+    2. Take 2's complement of the number to be subtracted.
+    3. Add the two numbers.
+    4. Discard carry if any.
+    5. If MSB = 0: result is positive. If MSB = 1: result is negative.
+       (Take 2's complement again to get magnitude of negative result)
+
+  Example 1: 7 - 5 (4-bit)
+    7 = 0111,  5 = 0101
+    2's complement of 5: 0101 -> 1010 -> +1 -> 1011
+    0111 + 1011 = 1 0010  -> discard carry -> 0010 = 2  ✓
+
+  Example 2: 5 - 7 (4-bit)
+    5 = 0101,  7 = 0111
+    2's complement of 7: 0111 -> 1000 -> +1 -> 1001
+    0101 + 1001 = 1110
+    MSB = 1 -> negative. 2's complement of 1110 = 0010 = 2
+    Result: -2  ✓
+
+
+================================================================================
+UNIT 3 : DIGITAL LOGIC
+================================================================================
+
+COMPUTER ARCHITECTURE vs COMPUTER ORGANIZATION
+-----------------------------------------------
+  Computer Architecture:
+    - What the computer does
+    - Logical design, instruction set, addressing modes
+    - Programmer visible
+
+  Computer Organization:
+    - How the computer is implemented
+    - Hardware structure: registers, ALU, memory, buses
+    - Hardware oriented
+
+
+LOGIC GATES
+-----------
+  Basic digital circuits that perform logical operations on binary inputs.
+
+  BASIC GATES:
+    AND Gate   -> Output = 1 only when ALL inputs are 1    Y = A.B
+    OR Gate    -> Output = 1 if ANY input is 1             Y = A+B
+    NOT Gate   -> Output = opposite of input               Y = A'
+
+  UNIVERSAL GATES:
+    NAND Gate  -> NOT of AND    Y = (A.B)'
+    NOR Gate   -> NOT of OR     Y = (A+B)'
+    Note: Any circuit can be built using ONLY NAND or ONLY NOR gates.
+
+  DERIVED GATES:
+    XOR Gate   -> Output = 1 when inputs are DIFFERENT    Y = A⊕B
+    XNOR Gate  -> Output = 1 when inputs are SAME         Y = (A⊕B)'
+
+  GATE SUMMARY:
+    AND   -> All inputs must be 1
+    OR    -> Any input is 1
+    NOT   -> Inverts input
+    NAND  -> NOT of AND
+    NOR   -> NOT of OR
+    XOR   -> Inputs different
+    XNOR  -> Inputs same
+
+
+TRUTH TABLES
+------------
+  BUFFER:        NOT (Inverter):   AND:          OR:
+  In  Out        In  Out           A B Out       A B Out
+   0   0          0   1            0 0  0        0 0  0
+   1   1          1   0            1 0  0        1 0  1
+                                   0 1  0        0 1  1
+                                   1 1  1        1 1  1
+
+  NAND:          NOR:              XOR:          XNOR:
+  A B Out        A B Out           A B Out       A B Out
+  0 0  1         0 0  1            0 0  0        0 0  1
+  1 0  1         1 0  0            1 0  1        1 0  0
+  0 1  1         0 1  0            0 1  1        0 1  0
+  1 1  0         1 1  0            1 1  0        1 1  1
+
+
+BOOLEAN ALGEBRA
+---------------
+  AND Laws:             OR Laws:              Complementation:
+  A . 0 = 0             A + 0 = A             0' = 1
+  A . 1 = A             A + 1 = 1             1' = 0
+  A . A = A             A + A = A             (A')' = A
+  A . A' = 0            A + A' = 1
+
+  Commutative:          Associative:          Distributive:
+  A + B = B + A         (A+B)+C = A+(B+C)     A.(B+C) = AB + AC
+  A . B = B . A         (A.B).C = A.(B.C)
+
+  Absorption Laws:      DeMorgan's Theorem:
+  A + A.B = A           (A + B)' = A'.B'
+  A(A + B) = A          (A.B)'   = A' + B'
+
+
+K-MAP (KARNAUGH MAP)
+--------------------
+  Used to simplify Boolean expressions (minimize logic gates).
+
+  SOP (Sum of Products): Group 1s in truth table.
+    - Product terms = minterms;  Symbol: Σ
+    - Example: f = AB + A'B + BC
+
+  POS (Product of Sums): Group 0s in truth table.
+    - Sum terms = maxterms;  Symbol: Π
+    - Example: f = (A+B)(A'+B)(B+C)
+
+  Types:
+    2-variable K-Map ->  4 cells (2^2)
+    3-variable K-Map ->  8 cells (2^3)
+    4-variable K-Map -> 16 cells (2^4)
+
+  Rules for grouping:
+    - Groups must be powers of 2 (1, 2, 4, 8, 16...)
+    - Groups should be as large as possible
+    - Cells can be wrapped around edges
+
+
+COMBINATIONAL LOGIC CIRCUITS
+------------------------------
+  Output depends ONLY on present inputs (no memory, no clock).
+
+  Examples: Half Adder, Full Adder, Half Subtractor, Full Subtractor,
+            MUX, DEMUX, Encoder, Decoder
+
+  HALF ADDER:
+    Inputs: A, B     |  Outputs: Sum, Carry
+    Sum   = A ⊕ B    |  Carry = A.B
+    Limitation: Cannot handle a carry from a previous stage.
+
+  FULL ADDER:
+    Inputs: A, B, Cin   |  Outputs: Sum, Cout
+    Sum   = A ⊕ B ⊕ Cin |  Carry = AB + ACin + BCin
+    Built using: 2 Half Adders + 1 OR Gate
+    Used in multi-bit binary addition.
+
+  HALF SUBTRACTOR:
+    Inputs: A, B         |  Outputs: Difference, Borrow
+    Difference = A ⊕ B  |  Borrow = A'.B
+
+  FULL SUBTRACTOR:
+    Inputs: A, B, Bin    |  Outputs: Difference, Borrow Out
+    Used in binary subtraction in ALU.
+
+  MULTIPLEXER (MUX) - Data Selector:
+    Selects one of many inputs and routes it to output.
+    Formula: Select Lines = log₂(Number of Inputs)
+
+    Types:
+      2:1 MUX  ->  2 Inputs, 1 Select Line
+      4:1 MUX  ->  4 Inputs, 2 Select Lines
+      8:1 MUX  ->  8 Inputs, 3 Select Lines
+      16:1 MUX -> 16 Inputs, 4 Select Lines
+      32:1 MUX -> 32 Inputs, 5 Select Lines
+
+    Applications: Data Routing, CPU Instruction Selection
+
+  DEMULTIPLEXER (DEMUX) - Data Distributor:
+    Routes one input to one of many outputs.
+
+    Types:
+      1:2 DEMUX  ->  2 Outputs, 1 Select Line
+      1:4 DEMUX  ->  4 Outputs, 2 Select Lines
+      1:8 DEMUX  ->  8 Outputs, 3 Select Lines
+      1:16 DEMUX -> 16 Outputs, 4 Select Lines
+      1:32 DEMUX -> 32 Outputs, 5 Select Lines
+
+    Applications: Data Distribution, Communication Systems
+
+  ENCODER:
+    Converts multiple inputs into coded binary output.
+    Example: 4 Inputs -> 2 Outputs (4:2 Encoder)
+    Note: Only ONE input should be active at a time.
+    Applications: Keyboard Encoding, Data Compression
+
+  DECODER:
+    Converts binary input code into multiple outputs.
+    Example: 2 Inputs -> 4 Outputs (2:4 Decoder)
+    Note: Only ONE output active for each input combination.
+    Applications: Memory Address Decoding, Display Systems
+
+
+SEQUENTIAL LOGIC CIRCUITS
+--------------------------
+  Output depends on BOTH present input AND previous output (has memory).
+  Memory elements: Latches and Flip-Flops
+
+  LATCH:
+    - Stores 1 bit; no clock; simple design
+    - Limitation: Output changes whenever input changes
+
+  CLOCK:
+    - Timing signal (periodic square wave)
+    - Synchronizes operations; controls flip-flops
+
+  SR LATCH:
+    - First memory element
+    - Limitation: Invalid state when S = R = 1
+
+  FLIP-FLOPS (Clock-controlled memory devices):
+    - Edge triggered; stable output; controlled data changes
+
+    SR FLIP-FLOP:
+      Improvement over SR Latch (clock-controlled).
+      Limitation: Invalid state (S=R=1) still exists.
+
+    JK FLIP-FLOP:
+      Removes invalid state of SR Flip-Flop.
+      Feature: J = K = 1 -> Toggle output.
+      Limitation: More complex, higher delay.
+
+    D FLIP-FLOP (Data Flip-Flop):
+      Single input; no invalid state; safe data storage.
+      Limitation: Cannot toggle directly.
+
+    T FLIP-FLOP (Toggle Flip-Flop):
+      Purpose: Efficient counting.
+      Limitation: Not suitable for data storage.
+
+  REGISTERS:
+    - Group of Flip-Flops; stores multiple bits.
+    - Types: Shift Register, Serial Register, Parallel Register
+    - Limitation: Limited storage capacity
+
+  COUNTERS:
+    Used to count events or clock pulses.
+
+    Asynchronous (Ripple) Counter:
+      - Simple design
+      - Limitation: Delay accumulates; slower
+
+    Synchronous Counter:
+      - All flip-flops triggered together; faster
+      - Limitation: Requires more hardware
+
+
+================================================================================
+UNIT 4 : PROBLEM SOLVING WITH COMPUTER PROGRAMMING
+================================================================================
+
+PROBLEM SOLVING
+---------------
+  Process of understanding a problem, breaking it into steps, and finding
+  a logical solution.
+
+  Steps:
+    1. Understanding the problem
+    2. Analyzing the problem
+    3. Designing algorithm and flowchart
+    4. Writing code
+    5. Testing & Debugging
+    6. Updation & Maintenance
+
+  Problem Types:
+    Sorting, Searching, String Processing, Graph Problems,
+    Combinational, Geometric, Numerical Problems
+
+
+ALGORITHM
+---------
+  A finite set of well-defined, step-by-step instructions to solve a problem.
+  Language independent; represented using pseudocode or flowcharts.
+
+  Properties of an Algorithm:
+    1. Input       -> Zero or more clearly defined inputs
+    2. Output      -> At least one well-defined output
+    3. Definiteness -> Each step is clear and unambiguous
+    4. Finiteness  -> Terminates after a finite number of steps
+    5. Effectiveness -> Steps are simple and executable
+    6. Correctness -> Produces the expected result
+    7. Generality  -> Works for all valid inputs
+
+  Example - Add two numbers:
+    Step 1: Start
+    Step 2: Read A and B
+    Step 3: C = A + B
+    Step 4: Display C
+    Step 5: Stop
+
+
+FLOWCHART
+---------
+  A visual diagram representing an algorithm using standard symbols.
+
+  Symbol           Shape          Purpose
+  ------           -----          -------
+  Start/End        Oval           Marks beginning or end
+  Process          Rectangle      Represents a computation/action
+  Decision         Diamond        Yes/No branching (condition)
+  Input/Output     Parallelogram  Read/Display data
+  Arrow            Arrow          Shows direction of flow
+  Connector        Circle         Connects different parts of chart
+  Document         Document       Indicates a report
+
+  Examples:
+    1. Largest of two numbers (A, B):
+       Start -> Read A, B -> A>B? Yes: Print A | No: Print B -> End
+
+    2. Odd or Even:
+       Start -> Input N -> N%2==0? Yes: "Even" | No: "Odd" -> End
+
+    3. Largest of three numbers (A, B, C):
+       Start -> Read A,B,C -> A>B & A>C? Yes: Print A
+             -> Else B>C? Yes: Print B | No: Print C -> End
+
+
+ALGORITHM DESIGN TECHNIQUES
+----------------------------
+  1. Brute Force        - Try all possible solutions (Exhaustive Search)
+  2. Divide & Conquer   - Break into sub-problems, solve recursively, combine
+  3. Greedy Method      - Choose best local option at each step
+  4. Dynamic Programming - Store sub-problem results to avoid recalculation
+  5. Branch & Bound     - Explore solutions smartly; prune dead branches
+  6. Backtracking       - Try all options; abandon invalid choices early
+
+  BRUTE FORCE:
+    Problems: Selection Sort, Linear Search, String Matching,
+              Travelling Salesman, Password Cracking
+
+  DIVIDE AND CONQUER:
+    Problems: Merge Sort, Quick Sort, Binary Search, Matrix Multiplication
+
+  GREEDY METHOD:
+    Problems: Knapsack, Prim's, Kruskal's, Job Scheduling, Dijkstra's
+
+  DYNAMIC PROGRAMMING:
+    Problems: Shortest Path, Knapsack (0/1), Fibonacci Numbers, LCS
+
+  BRANCH AND BOUND:
+    Problems: 8-Puzzle, Travelling Salesman, Graph Coloring
+
+  BACKTRACKING:
+    Problems: N-Queens, Sum of Subset, Sudoku, Hamiltonian Cycle
+
+
+TIME COMPLEXITIES
+-----------------
+  SEARCHING:
+    Algorithm       Best Case   Average Case   Worst Case
+    Linear Search   O(1)        O(n)           O(n)
+    Binary Search   O(1)        O(log n)       O(log n)
+
+  SORTING:
+    Algorithm       Best Case    Average Case   Worst Case
+    Bubble Sort     O(n)         O(n²)          O(n²)
+    Selection Sort  O(n²)        O(n²)          O(n²)
+    Insertion Sort  O(n)         O(n²)          O(n²)
+    Merge Sort      O(n log n)   O(n log n)     O(n log n)
+    Quick Sort      O(n log n)   O(n log n)     O(n²)
+    Heap Sort       O(n log n)   O(n log n)     O(n log n)
+    Counting Sort   O(n+k)       O(n+k)         O(n+k)
+    Radix Sort      O(nk)        O(nk)          O(nk)
+
+  GRAPH ALGORITHMS:
+    DFS / BFS                    O(V + E)
+    Dijkstra's Algorithm         O((V+E) log V)
+    Prim's Algorithm             O((V+E) log V)
+    Kruskal's Algorithm          O(E log V)
+
+  DYNAMIC PROGRAMMING:
+    Fibonacci (DP)               O(n)
+    LCS                          O(n × m)
+    Knapsack (0/1)               O(nW)
+
+  HASHING:
+    Insert / Search / Delete     O(1) average
+
+
+================================================================================
+UNIT 5 : PROGRAMMING LANGUAGES & C PROGRAMMING
+================================================================================
+
+PROGRAMMING LANGUAGES
+---------------------
+  A formal language to communicate instructions to a computer.
+
+  A. Low-Level Languages (close to machine):
+     1. Machine Language -> Uses 0s and 1s; directly understood by CPU; very fast
+     2. Assembly Language -> Symbolic codes (ADD, MOV, SUB); needs Assembler
+
+  B. High-Level Languages (close to human language):
+     Examples: C, C++, Java, Python, PHP, JavaScript
+     Features: Easy to understand, portable, needs Compiler/Interpreter
+
+  TRANSLATORS:
+    1. Compiler    -> Converts whole program at once; faster execution  (C, C++, Java)
+    2. Interpreter -> Translates line by line; slower execution  (Python, JavaScript)
+    3. Assembler   -> Converts assembly language to machine language
+
+
+STRUCTURE OF A C PROGRAM
+-------------------------
+  1. Documentation Section  -> Comments: program name, author, details
+  2. Link Section           -> #include directives to link library functions
+  3. Definition Section     -> #define symbolic constants
+  4. Global Declaration     -> Global variables and function declarations
+  5. main() Function        -> Declaration part + Executable part (required)
+  6. Sub-program Section    -> User-defined functions (placed after main)
+
+
+PROGRAM TRANSLATION PROCESS
+----------------------------
+  Source Code
+      |
+  Preprocessor  -> Handles #include, #define, conditional compilation (#ifdef)
+      |
+  Compiler      -> Converts to assembly code; syntax & semantic checks
+      |
+  Assembler     -> Converts assembly to object code (.obj / .o)
+      |
+  Linker        -> Combines object files + libraries -> Executable (.exe / a.out)
+      |
+  Loader        -> OS loads executable into memory; program starts running
+
+
+DATA TYPES IN C
+---------------
+  PRIMARY:
+    int      -> Integer             (4 bytes)   e.g., 10, -5
+    float    -> Decimal (single)    (4 bytes)   e.g., 3.14
+    double   -> Decimal (double)    (8 bytes)   e.g., 3.141592
+    char     -> Single character    (1 byte)    e.g., 'A', '5'
+
+  DERIVED:
+    Array, Pointer, Function, Structure/Function Pointer
+
+  USER-DEFINED:
+    struct -> Groups different data types under one name
+    union  -> Like struct but shares memory (one value at a time)
+    enum   -> Named set of integer constants
+
+  VOID:
+    void -> No value; used for functions returning nothing
+
+  INTEGER TYPE RANGES (32-bit GCC):
+    short int          2 bytes    -32,768 to +32,767
+    unsigned short     2 bytes    0 to 65,535
+    int                4 bytes    -2,147,483,648 to +2,147,483,647
+    unsigned int       4 bytes    0 to 4,294,967,295
+    long long int      8 bytes    -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+    unsigned long long 8 bytes    0 to 18,446,744,073,709,551,615
+
+  FLOATING POINT:
+    float         4 bytes      ~3.4E-38  to 3.4E+38      6 digits precision
+    double        8 bytes      ~1.7E-308 to 1.7E+308     15 digits precision
+    long double   10/16 bytes   Very large range          18+ digits precision
+
+  CHAR:
+    char           1 byte    -128 to +127 (signed) OR 0 to 255 (unsigned)
+
+  FORMAT SPECIFIERS:
+    %d  -> int          %f  -> float/double    %c  -> char
+    %s  -> string       %u  -> unsigned int    %lf -> double
+    %x  -> hexadecimal  %o  -> octal
+
+
+KEYWORDS IN C (32 total)
+-------------------------
+  auto     break    case     char     const    continue
+  default  do       double   else     enum     extern
+  float    for      goto     if       int      long
+  register return   short    signed   sizeof   static
+  struct   switch   typedef  union    unsigned void
+  volatile while
+
+
+IDENTIFIERS
+-----------
+  Names given to variables, functions, arrays, etc. by the programmer.
+
+  Rules:
+    - Must begin with a letter or underscore (_)
+    - Cannot start with a digit
+    - Can contain letters, digits, and underscores
+    - No spaces allowed
+    - Case-sensitive (Age ≠ age)
+    - Cannot use C keywords
+
+  Valid: value2, _count, total_marks
+  Invalid: 2value, int (keyword), total marks (space)
+
+  Keywords vs Identifiers:
+    Keywords      -> Reserved by C; predefined meaning  (int, while)
+    Identifiers   -> Created by programmer; no predefined meaning  (age, sum)
+
+
+VARIABLES
+---------
+  A named memory location to store data that can change during execution.
+
+  Declaration:              int marks;
+  Initialization:           age = 25;
+  Declaration + Init:       int age = 25;
+                            float salary = 50000.75;
+                            char grade = 'A';
+
+  Note: Global variables auto-initialized to 0.
+        Local variables contain garbage values if not initialized.
+
+
+CONSTANTS
+---------
+  A fixed value that does not change during execution.
+
+  Types:
+    Integer constant, Floating-point constant, Character constant,
+    String constant, Escape sequence constant, Symbolic constant
+
+  Escape Sequences:
+    \n  -> New line       \t  -> Tab space
+    \'  -> Single quote   \"  -> Double quote
+    \\  -> Backslash
+
+  Symbolic Constants:
+    #define PI 3.14           // using #define
+    const float PI = 3.14;   // using const keyword
+
+
+TOKENS
+------
+  The smallest individual elements of a C program (building blocks).
+  6 Types: Keywords, Identifiers, Constants, Operators, Strings, Special Symbols
+
+
+OPERATORS
+---------
+  A symbol that tells the compiler to perform a specific operation.
+
+  1. ARITHMETIC:     +  -  *  /  %
+
+  2. RELATIONAL:     ==  !=  >  <  >=  <=  (Result: 1=true, 0=false)
+
+  3. LOGICAL:        &&  (AND)    ||  (OR)    !  (NOT)
+
+  4. ASSIGNMENT:     =   +=   -=   *=   /=   %=
+
+  5. INCREMENT/DECREMENT:
+       ++  (Increment by 1)    --  (Decrement by 1)
+       Pre-increment:  ++a   (increments then uses value)
+       Post-increment: a++   (uses value then increments)
+
+  6. CONDITIONAL (TERNARY):
+       condition ? expression1 : expression2
+       Example: result = (age >= 18) ? "Adult" : "Minor";
+
+  7. BITWISE:    &  (AND)  |  (OR)  ^  (XOR)  ~  (NOT)  <<  (Left shift)  >>  (Right shift)
+
+  8. SPECIAL:
+       ,          Comma (separates variables/expressions)
+       sizeof()   Returns memory size of a data type  e.g., sizeof(int) = 4
+       &          Address-of operator
+       *          Dereference (pointer) operator
+
+  OPERATOR PRECEDENCE (High to Low):
+    Level 1: ()                    -> Parentheses             (Left to Right)
+    Level 2: ++ -- ! ~ + - (unary) -> Unary operators         (Right to Left)
+    Level 3: * / %                 -> Multiplicative          (Left to Right)
+    Level 4: + -                   -> Additive                (Left to Right)
+    Level 5: < <= > >=             -> Relational              (Left to Right)
+    Level 6: == !=                 -> Equality                (Left to Right)
+    Level 7: &&                    -> Logical AND             (Left to Right)
+    Level 8: ||                    -> Logical OR              (Left to Right)
+    Level 9: = += -= etc.          -> Assignment              (Right to Left)
+
+  Sample Exam Questions:
+    Q: int a=5,b=2; printf("%d", a++ + ++b);   ANS: 8  (5 + 3)
+    Q: if(a==0) printf("Hai"); else printf("Hello");  ANS: Hello (garbage value)
+
+
+DECISION MAKING STATEMENTS (BRANCHING)
+---------------------------------------
+  1. IF STATEMENT:
+     if (condition) { // statements }
+     Example: if(marks>50) { printf("Pass"); }
+
+  2. IF-ELSE STATEMENT:
+     if (condition) { // true } else { // false }
+     Example: if (num%2==0) printf("Even"); else printf("Odd");
+
+  3. ELSE-IF LADDER:
+     if (cond1) { ... }
+     else if (cond2) { ... }
+     else { ... }
+
+  4. NESTED IF:  An if inside another if.
+     if (a > 0) { if (a%2 == 0) { printf("Positive even"); } }
+
+  5. SWITCH STATEMENT:  For multiple fixed options.
+     switch(expression) {
+         case 1: ...; break;
+         case 2: ...; break;
+         default: ...;
+     }
+     Works with integers and characters; break exits the switch.
+
+
+LOOP STATEMENTS
+---------------
+  A loop repeatedly executes a block of code while a condition is true.
+
+  1. FOR LOOP (known number of iterations):
+     for (initialization; condition; increment) { // body }
+     Example: for (int i=1; i<=5; i++) { printf("%d ", i); }
+
+  2. WHILE LOOP (unknown iterations - entry controlled):
+     while (condition) { // body }
+     Example: int i=1; while(i<=5) { printf("%d ",i); i++; }
+
+  3. DO-WHILE LOOP (executes at least once - exit controlled):
+     do { // body } while (condition);
+     Example: int i=1; do { printf("%d ",i); i++; } while(i<=5);
+
+
+JUMP STATEMENTS
+---------------
+  Transfer control from one part of the program to another.
+
+  1. goto     -> Unconditionally transfers to a labeled statement
+  2. break    -> Exits a loop or switch immediately
+  3. continue -> Skips current iteration; moves to next
+  4. return   -> Exits a function and optionally returns a value
+
+  Examples:
+    goto:      if(num==3) goto print;  ...  print: printf("Number is 3");
+    break:     if(i==3) break;        // stops loop at i=3; output: 1 2
+    continue:  if(i==3) continue;     // skips i=3; output: 1 2 4 5
+
+
+FUNCTIONS
+---------
+  A block of code that performs a specific task.
+
+  Advantages:
+    Reusability, Modularity, Easy debugging, Readability, Memory efficiency
+
+  Types:
+    1. Library Functions    -> Predefined in header files (printf, scanf, sqrt)
+    2. User-defined Functions -> Created by the programmer
+
+  Common Header Files:
+    stdio.h    -> printf(), scanf(), gets(), puts(), fopen(), fclose()
+    stdlib.h   -> malloc(), free(), atoi(), exit()
+    string.h   -> strlen(), strcpy(), strcat(), strcmp()
+    math.h     -> sqrt(), pow(), abs(), floor()
+    ctype.h    -> isalpha(), isdigit(), toupper(), tolower()
+    time.h     -> time(), clock(), difftime()
+
+  Structure of a Function:
+    1. Declaration (Prototype):  return_type function_name(param_list);
+    2. Definition:               return_type function_name(param_list) { body }
+    3. Function Call:            function_name(arguments);
+
+  Example:
+    void greet();
+    int main() { greet(); return 0; }
+    void greet() { printf("Hello!"); }
+
+  Function Categories:
+    1. No arguments, no return value
+    2. Arguments, no return value
+    3. No arguments, return value
+    4. Arguments and return value
+
+  PARAMETERS vs ARGUMENTS:
+    Parameters -> Variables in function definition (formal parameters)
+      void add(int a, int b) { ... }  // a, b are parameters
+    Arguments  -> Actual values passed when calling (actual parameters)
+      add(5, 10);  // 5, 10 are arguments
+
+  CALL BY VALUE:
+    A copy of the value is passed. Original variable NOT affected.
+    void change(int x) { x = 50; }
+    int a=10; change(a); // a still = 10
+
+  CALL BY REFERENCE:
+    The address (pointer) is passed. Original variable IS affected.
+    void change(int *x) { *x = 50; }
+    int a=10; change(&a); // a becomes 50
+
+  RECURSION:
+    A function that calls itself to solve a problem.
+    Must have a BASE CONDITION to stop infinite calls.
+
+    Example: Factorial
+      int fact(int n) {
+          if (n == 0) return 1;        // Base condition
+          return n * fact(n - 1);      // Recursive call
+      }
+      fact(3) -> 3 * 2 * 1 * 1 = 6
+
+    Use cases: Factorial, Fibonacci, Tree/graph traversal, Searching, Sorting
+
+  SCOPE:
+    Local scope  -> Variables inside a function; accessible only within it.
+    Global scope -> Variables outside all functions; accessible anywhere.
+    Note: Global variables auto-initialized to 0; local contain garbage values.
+
+
+ARRAYS
+------
+  A collection of elements of the same data type, stored in contiguous memory,
+  accessed using a common name and index.
+
+  Features:
+    - Same data type for all elements
+    - Contiguous memory allocation
+    - Index starts from 0
+    - Fixed size (cannot change at runtime)
+
+  ONE-DIMENSIONAL ARRAY:
+    Declaration:     int marks[5];
+    Initialization:  int marks[5] = {10, 20, 30, 40, 50};
+    Partial init:    int a[5] = {1, 2};  // rest become 0
+    Index-wise:      marks[0] = 10;  marks[4] = 50;  marks[5] = invalid
+
+  TWO-DIMENSIONAL ARRAY (Matrix):
+    Declaration:     int matrix[2][3];
+    Initialization:  int matrix[2][3] = { {1,2,3}, {4,5,6} };
+    Access:          matrix[row][column]
+
+
+POINTERS
+--------
+  A variable that stores the memory address of another variable.
+
+  Declaration:     int *p;
+  Initialization:  int a = 10;  int *p = &a;  // p stores address of a
+
+  Operators:
+    & (Address-of):    p = &a;           // p gets the address of variable a
+    * (Dereference):   printf("%d",*p);  // prints value at address stored in p
+
+  Example:
+    int a = 10;   // stored at address 1004
+    int *p;
+    p = &a;       // p = 1004
+    *p = 20;      // a becomes 20
+
+
+STRUCTURE (struct)
+------------------
+  A user-defined data type that groups different types of data under one name.
+
+  Declaration:
+    struct Student {
+        int age;
+        float marks;
+        char name[20];
+    };
+
+  Declaring Variable:   struct Student s1;
+  Accessing Members:    s1.age = 18;   s1.marks = 95.4;  (use dot operator)
+
+
+UNION
+-----
+  All members share the SAME memory location.
+  Only ONE member can hold a value at a time.
+
+  Syntax:
+    union UnionName { int a;  float b;  char c; };
+    union UnionName var;
+    var.a = 10;  // assigning one member overwrites others
+
+  Structure vs Union:
+    Feature        Structure                  Union
+    Memory         Separate for each member   Shared (size = largest member)
+    Value Storage  All members hold values    Only one at a time
+    Use Case       Multiple data fields       Memory saving
+
+
+ENUM
+----
+  User-defined type that assigns meaningful names to integer constants.
+
+  Example:
+    enum Day { MON, TUE, WED, THU, FRI, SAT, SUN };
+    // MON=0, TUE=1, WED=2, ...
+    enum Day today = WED;
+    printf("%d", today);  // Output: 2
+
+
+STRINGS
+-------
+  A sequence of characters ending with a null character '\0'.
+
+  Declaration:     char str[20];
+  Initialization:  char str[] = "Hello";  // 'H','e','l','l','o','\0'
+
+  String Functions (from <string.h>):
+    strlen(str)          -> Length of string
+    strcpy(dest, src)    -> Copy string
+    strcat(str1, str2)   -> Concatenate strings
+    strcmp(str1, str2)   -> Compare strings (returns 0 if equal)
+    strrev(str)          -> Reverse string (non-standard)
+
+
+FILE HANDLING
+-------------
+  Allows programs to store data permanently on disk.
+
+  Steps:
+    1. Open file using fopen()
+    2. Perform read/write operations
+    3. Close file using fclose()
+
+  FILE *fp = fopen("data.txt", "r");
+  fclose(fp);
+
+  File Modes:
+    "r"   -> Read only (file must exist)
+    "w"   -> Write only (creates new or overwrites)
+    "a"   -> Append (write at end)
+    "r+"  -> Read and write (file must exist)
+    "w+"  -> Read and write (creates/overwrites)
+    "a+"  -> Read and append
+
+  Reading Functions:    fgetc(), fgets(), fscanf()
+  Writing Functions:    fputc(), fputs(), fprintf()
+  Other Functions:      feof() (check end of file)
+
+
+================================================================================
+UNIT 6 : C vs C++ AND OBJECT-ORIENTED PROGRAMMING (OOP)
+================================================================================
+
+C vs C++
+--------
+  Feature                C                     C++
+  -------                -                     ---
+  Paradigm               Procedural            Procedural + OOP + Generic
+  Approach               Top-down              Bottom-up
+  Encapsulation          Not supported         Supported (classes)
+  Data Hiding            No                    Yes (access specifiers)
+  Function Overloading   No                    Yes
+  Operator Overloading   No                    Yes
+  Inheritance            No                    Yes
+  Polymorphism           No                    Yes
+  Exception Handling     No                    Yes (try/catch)
+  Memory Allocation      malloc()/free()       new/delete
+  Namespace              No                    Yes (namespace std)
+  I/O                    printf(), scanf()     cout, cin
+  Templates              No                    Yes
+  Speed                  Faster (low-level)    Slightly slower
+  Uses                   Systems, OS, embedded Apps, games, compilers, OOP
+
+
+OBJECT-ORIENTED PROGRAMMING (OOP)
+----------------------------------
+  Organizes software into objects combining data and functions.
+  Models real-world entities (Student, Car, BankAccount) as objects.
+
+  Class  -> Blueprint/template defining data members and functions.
+  Object -> Real-world entity created from a class.
+    Example: Car myCar;  (Car = class, myCar = object)
+
+  FOUR PILLARS OF OOP:
+
+  1. ENCAPSULATION
+     Wrapping data (variables) and functions (methods) together into a class.
+
+  2. ABSTRACTION
+     Showing only essential features; hiding complex internal details.
+
+  3. INHERITANCE
+     Child/derived class acquires properties of parent/base class.
+     Types: Single, Multilevel, Multiple, Hierarchical, Hybrid
+
+  4. POLYMORPHISM
+     Same function or operator behaves differently based on context.
+
+     Compile-time Polymorphism:
+       - Function overloading
+       - Operator overloading
+
+     Runtime Polymorphism:
+       - Function overriding using virtual functions
+
+     Example: area() behaves differently for Circle, Triangle, Rectangle.
+
+
+================================================================================
+UNIT 7 : COMPUTER ARCHITECTURE & ORGANIZATION
+================================================================================
+
+BLOCK STRUCTURE OF A COMPUTER
+------------------------------
+  A computer system has five basic units:
+    1. Input Unit      -> Accepts data/instructions; converts to machine-readable form
+    2. Output Unit     -> Displays results; converts machine output to human-readable
+    3. Memory Unit     -> Stores data, instructions, results
+    4. ALU             -> Performs arithmetic & logical operations
+    5. Control Unit    -> Controls and coordinates all operations
+
+  CPU = ALU + Control Unit (Brain of the computer)
+
+
+VON NEUMANN ARCHITECTURE
+------------------------
+  Proposed by John Von Neumann.
+  Both data and instructions stored in the SAME memory.
+  Uses a SINGLE BUS for communication.
+
+  Advantage:  Simple, cost-effective, widely used.
+  Limitation: Von Neumann Bottleneck - data and instructions share the same bus
+              -> slows down performance.
+
+
+FETCH - DECODE - EXECUTE CYCLE
+-------------------------------
+  1. Fetch:   Control Unit gets the next instruction from memory (stored in IR).
+  2. Decode:  Control Unit interprets the instruction.
+  3. Execute: CPU carries out the instruction (ALU or other units).
+  This cycle repeats continuously until the program ends.
+
+
+REGISTERS
+---------
+  Small, high-speed storage inside the CPU. Faster than cache and RAM.
+
+    PC  (Program Counter)       -> Address of next instruction; auto-increments
+    IR  (Instruction Register)  -> Holds current instruction being executed
+    MAR (Memory Address Reg)    -> Address of memory location to access
+    MDR (Memory Data Reg)       -> Data being transferred to/from memory
+    ACC (Accumulator)           -> Stores ALU intermediate results
+    SP  (Stack Pointer)         -> Top of stack; used in function calls/interrupts
+    BR  (Base Register)         -> Base address for relocation
+    IX  (Index Register)        -> Used for array and loop indexing
+    GPR (General Purpose Regs)  -> AX, BX, CX, DX (x86); R0-R15 (ARM)
+
+  Flag Register (Status Register) - Stores condition flags:
+    Z (Zero), C (Carry), S (Sign), O (Overflow), P (Parity)
+
+
+CPU - I/O COMMUNICATION
+------------------------
+  Types:
+    1. Programmed I/O  -> CPU polls device in a loop; inefficient (busy waiting)
+    2. Interrupt-Driven I/O -> Device sends interrupt; CPU handles then resumes
+    3. DMA (Direct Memory Access) -> Data transfers directly; CPU free to work
+    4. Memory-Mapped I/O -> I/O devices assigned memory addresses; fast
+    5. Isolated I/O (Port-Mapped) -> Separate address space for I/O devices
+
+  System Bus Components:
+    Data Bus     -> Carries data; BIDIRECTIONAL
+    Address Bus  -> Carries address; UNIDIRECTIONAL (CPU->Memory)
+    Control Bus  -> Carries control signals (RD, WR, Clock, Interrupt, Reset)
+
+  Address Bus Width -> Determines max addressable memory:
+    16-bit -> 2^16 = 65,536 locations
+    32-bit -> 4 GB addressable memory
+
+  Data Bus Width -> Determines data transfer speed:
+    8-bit  -> 8 bits at a time;   32-bit -> 32 bits at a time
+
+
+INTERRUPTS
+----------
+  A signal sent to the CPU requesting immediate attention.
+
+  Process:
+    1. Interrupt generated
+    2. CPU pauses current task; saves its state
+    3. CPU executes Interrupt Service Routine (ISR)
+    4. CPU resumes previous task
+
+  Types:
+    1. Hardware Interrupts  -> External devices (keyboard, mouse, timer)
+    2. Software Interrupts  -> Program instructions (INT, system calls)
+    3. Internal Interrupts  -> CPU errors (divide by zero, overflow, invalid instruction)
+
+  Maskable vs Non-Maskable:
+    Maskable     -> Can be enabled/disabled; lower priority  (INTR, RST 7.5, keyboard)
+    Non-Maskable -> Cannot be disabled; highest priority  (TRAP, NMI, power failure)
+
+  Vectored vs Non-Vectored:
+    Vectored     -> ISR address fixed/predefined; faster  (TRAP, RST interrupts)
+    Non-Vectored -> ISR address provided externally; slower  (INTR)
+
+  Interrupt Controllers:
+    8259/8259A -> Used with 8085/8086; Programmable PIC
+    APIC       -> x86 systems; multiprocessor support
+    NVIC       -> ARM Cortex-M; nested, vectored
+
+
+MEMORY TYPES
+------------
+  PRIMARY MEMORY (directly accessible by CPU):
+    RAM (Random Access Memory):
+      - Volatile; fast; read/write
+      - SRAM: Flip-flop based; very fast; costly; used as Cache
+      - DRAM: Capacitor based; needs refresh every 64ms; cheaper; main memory
+
+      DRAM Types:
+        ADRAM  -> Async; not synced with CPU; slow
+        SDRAM  -> Synced with system clock; faster
+        DDR    -> Transfers on both clock edges
+        RDRAM  -> Packet-based; high-frequency; expensive
+        CDRAM  -> DRAM with built-in SRAM cache
+
+    ROM (Read Only Memory):
+      - Non-volatile; stores firmware (BIOS/UEFI)
+      - Mask ROM  -> Written at manufacturing; cannot change
+      - PROM      -> User programs once; cannot erase
+      - EPROM     -> Erased by UV light; reprogrammable
+      - EEPROM    -> Erased electrically; byte-level
+      - Flash ROM -> Block-level erasure; fastest; used in SSDs/USB drives
+
+  SECONDARY MEMORY (permanent storage; CPU cannot access directly):
+    Magnetic: HDD, Magnetic Tape
+    Optical:  CD (~700MB), DVD (4.7-8.5GB), Blu-ray (25-100GB)
+    Solid-State: SSD, USB Flash Drive, SD/microSD Card
+
+  CACHE MEMORY:
+    - Small, fast memory between CPU and RAM
+    - Stores frequently used data and instructions
+    - Cache Hit  -> Data found; fast access
+    - Cache Miss -> Data not found; fetched from RAM
+    - Hit Ratio  = Hits / (Hits + Misses)
+
+  LOCALITY OF REFERENCE:
+    Spatial Locality  -> Nearby memory locations accessed soon
+    Temporal Locality -> Same location likely accessed again soon
+
+  CACHE MAPPING:
+    Direct Mapping         -> Each block maps to one fixed cache line
+    Fully Associative      -> Block can go anywhere; flexible but expensive
+    Set Associative        -> Divided into sets; most widely used
+
+  VIRTUAL MEMORY:
+    - Allows programs to use more memory than physical RAM
+    - OS translates logical (virtual) addresses to physical addresses
+    - Missing data loaded from disk (swap space)
+    - Virtual Address = | Page Number | Offset |
+
+  PAGING:
+    Page  -> Fixed-size block in logical (virtual) memory
+    Frame -> Fixed-size block in physical memory (RAM)
+    Page Table -> Maps Page Number to Frame Number
+    TLB (Translation Lookaside Buffer) -> Fast cache for page table entries
+
+  FRAGMENTATION:
+    External Fragmentation -> Free memory exists but scattered; fixed by Paging/Compaction
+    Internal Fragmentation -> Unused space inside allocated block; fixed by smaller blocks
+
+  MEMORY UNITS:
+    Bit -> 0 or 1          Nibble -> 4 bits
+    Byte -> 8 bits          KB -> 1024 Bytes
+    MB -> 1024 KB           GB -> 1024 MB
+    TB -> 1024 GB           PB -> 1024 TB
+
+
+================================================================================
+UNIT 8 : DATABASE FUNDAMENTALS
+================================================================================
+
+DATA & DATABASES
+-----------------
+  Data      -> Raw facts and figures (Name, Age, Marks)
+  Database  -> Organized collection of related data
+
+  Problems with File Systems:
+    a) Data Redundancy    -> Same data stored in multiple places
+    b) Data Inconsistency -> Duplicates may not match
+    c) Poor Security      -> Anyone can view or modify
+    d) No Multi-User Support -> Unsafe concurrent access
+    e) Difficult Data Sharing -> Complex to share between systems
+
+
+DBMS
+----
+  Database Management System - Programs to store, manage, and control access to data.
+
+  Functions:
+    Insert, update, delete, retrieve data
+    Security and authorization
+    Data integrity, reduce redundancy
+    Concurrent access, backup and recovery
+
+  Types:
+    Relational DB    -> Tables; SQL; structured data  (MySQL, PostgreSQL, Oracle)
+    NoSQL DB         -> Flexible formats  (MongoDB, Redis, Cassandra)
+    Object-Oriented  -> Data as objects  (ObjectDB)
+
+  Database Abstraction (3 Levels):
+    Internal Level  -> How data is physically stored
+    Conceptual Level -> What data is stored (metadata); overall design
+    External Level  -> User-specific views; provides security
+
+  Data Independence:
+    Logical  -> Changes to conceptual schema don't affect user views
+    Physical -> Changes to physical storage don't affect conceptual schema
+
+  ACID PROPERTIES:
+    Atomicity   -> All or nothing; partial failure = rollback everything
+    Consistency -> Database remains valid before and after transaction
+    Isolation   -> Transactions execute independently; don't interfere
+    Durability  -> Committed transactions permanently saved even after crash
+
+
+ER MODEL (Entity-Relationship Model)
+-------------------------------------
+  Conceptual model for designing a database. Proposed by Peter Chen in 1971.
+  Follows TOP-DOWN APPROACH.
+
+  Entity      -> Object stored as data (Student, Course, Company)
+  Attribute   -> Properties of entity (StudentID, Name)
+  Relationship -> Connection between entities (Student enrolls in Course)
+
+  Types of Entities:
+    Strong Entity -> Has own primary key; independent (Student)
+    Weak Entity   -> No own primary key; depends on strong entity
+
+  Types of Attributes:
+    Key Attribute       -> Uniquely identifies entity (Roll_No)
+    Composite Attribute -> Made of sub-attributes (Full_Name = First + Last)
+    Multivalued Attribute -> Can have multiple values (Phone_Numbers)
+    Derived Attribute   -> Can be derived from other attributes (Age from DOB)
+
+  Degree of Relationship:
+    Unary    -> 1 entity (Person married to Person)
+    Binary   -> 2 entities (Student enrolled in Course)  <- most common
+    Ternary  -> 3 entities
+
+  Cardinality:
+    1:1   (One-to-One)  -> One person has one passport
+    1:N   (One-to-Many) -> One teacher teaches many students
+    N:1   (Many-to-One) -> Many students belong to one department
+    M:N   (Many-to-Many) -> Students enroll in many courses
+
+
+RELATIONAL MODEL & RDBMS
+-------------------------
+  Developed by E.F. Codd (1970s). Data stored in tables (rows & columns).
+
+  Terminology:
+    Relation (Table)     -> e.g., STUDENT table
+    Tuple (Row/Record)   -> One complete row  (e.g., 101, Anil, CSE)
+    Attribute (Column)   -> A column  (e.g., Name, Age)
+    Degree               -> Number of columns
+    Cardinality          -> Number of rows
+
+  DATABASE KEYS:
+    Super Key      -> Any attribute set that uniquely identifies a record
+    Candidate Key  -> Minimal super key (no extra attributes)
+    Primary Key    -> Selected candidate key; Unique, NOT NULL, one per table
+    Alternate Key  -> Candidate keys NOT chosen as primary key
+    Foreign Key    -> Refers to primary key of another table
+    Composite Key  -> Two or more attributes combined to uniquely identify a row
+
+  NORMALIZATION:
+    Process of organizing a database to reduce redundancy and improve integrity.
+
+    Anomalies without normalization:
+      Insertion Anomaly -> Cannot insert data without other data
+      Deletion Anomaly  -> Deleting a row causes unintended data loss
+      Update Anomaly    -> Changing one value requires updating many rows
+
+    Normal Forms:
+      1NF  -> No multi-valued attributes; every field must be atomic (single value)
+      2NF  -> In 1NF + No partial dependency (non-key attribute depends on whole key)
+      3NF  -> In 2NF + No transitive dependency (A->B->C means C transitively depends on A)
+      BCNF -> For every A->B, A must be a super key; stronger than 3NF
+      4NF  -> In BCNF + No multivalued dependency (MVD)
+      5NF  -> Cannot be decomposed further without loss of information
+
+
+SQL (Structured Query Language)
+---------------------------------
+  Standard language to interact with relational databases.
+
+  SQL COMMAND CATEGORIES:
+    1. DDL (Data Definition Language)   -> CREATE, ALTER, DROP, TRUNCATE
+    2. DML (Data Manipulation Language) -> INSERT, UPDATE, DELETE
+    3. DQL (Data Query Language)        -> SELECT
+    4. DCL (Data Control Language)      -> GRANT, REVOKE
+    5. TCL (Transaction Control Language) -> COMMIT, ROLLBACK, SAVEPOINT
+
+  DDL EXAMPLES:
+    CREATE TABLE students(id INT, name VARCHAR(30), age INT);
+    ALTER TABLE students ADD email VARCHAR(50);
+    TRUNCATE TABLE students;   -- Removes all data; keeps structure
+    DROP TABLE students;       -- Removes data AND structure
+
+  DML EXAMPLES:
+    INSERT INTO students VALUES (1, 'Asha', 20);
+    UPDATE students SET course = 'Btech' WHERE name = 'Ravi';
+    DELETE FROM students WHERE name = 'Ravi';
+
+  DQL EXAMPLES:
+    SELECT * FROM students;
+    SELECT name, course FROM students WHERE course = 'BCA';
+    SELECT * FROM students ORDER BY student_id DESC;
+
+  DCL EXAMPLES:
+    GRANT SELECT ON Student TO user1;
+    REVOKE SELECT ON Student FROM user1;
+
+  TCL EXAMPLES:
+    INSERT INTO Student VALUES(1,'Ravi'); COMMIT;
+    DELETE FROM Student WHERE id=1; ROLLBACK;
+    SAVEPOINT sp1;  ROLLBACK TO sp1;
+
+  SQL CONSTRAINTS:
+    NOT NULL    -> Column cannot be empty
+    UNIQUE      -> No two rows can have same value
+    PRIMARY KEY -> NOT NULL + UNIQUE; identifies each record
+    FOREIGN KEY -> Links to primary key of another table
+    CHECK       -> Validates a condition (e.g., age >= 18)
+
+  AGGREGATE FUNCTIONS:
+    COUNT()  -> Number of rows
+    SUM()    -> Total sum
+    AVG()    -> Average value
+    MAX()    -> Maximum value
+    MIN()    -> Minimum value
+
+  SQL JOINS:
+    INNER JOIN -> Only matching rows from both tables
+    LEFT JOIN  -> All rows from left table + matching from right (NULL if no match)
+    RIGHT JOIN -> All rows from right table + matching from left (NULL if no match)
+    FULL JOIN  -> All rows from both tables (NULL where no match)
+
+
+================================================================================
+QUICK REVISION TABLE - IMPORTANT FORMULAS & FACTS
+================================================================================
+
+  Number of select lines in MUX    = log₂(number of inputs)
+  Number of select lines in DEMUX  = log₂(number of outputs)
+  Number of outputs in Decoder     = 2^(number of inputs)
+  Number of inputs in Encoder      = 2^(number of outputs)
+
+  Cache line (Direct Mapping)      = Block Number % Number of Cache Lines
+  Number of Cache Lines            = Cache Size ÷ Block Size
+  Virtual Address                  = Page Number + Offset
+
+  Hit Ratio     = Hits / (Hits + Misses)
+  IEEE 754 bias = 127 (32-bit), 1023 (64-bit)
+  Exponent      = actual exponent + bias
+
+  TOTAL KEYWORDS IN C = 32
+  Registers are faster than: Cache > RAM > Secondary Memory
+  Types of DRAM: ADRAM, SDRAM, DDR, RDRAM, CDRAM
+
+  2's complement: take 1's complement, then add 1
+  BCD: each decimal digit = 4-bit binary
+
+================================================================================
+END OF NOTES
+================================================================================
