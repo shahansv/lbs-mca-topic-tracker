@@ -1,11 +1,12 @@
 "use client";
 
-import { use } from "react";
+import { use, useState } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 import Nav from "@/components/Nav";
 import ProgressRing from "@/components/ProgressRing";
+import PracticeModal from "@/components/PracticeModal";
 import { useProgress, makeExamId } from "@/lib/store";
 import { CURRICULUM, SUBJECT_META } from "@/lib/curriculum";
 
@@ -29,6 +30,9 @@ export default function DayPage({
     toggleExam,
     isExamCompleted,
   } = useProgress();
+
+  const [practiceOpen, setPracticeOpen] = useState(false);
+  const [practiceTopic, setPracticeTopic] = useState({ name: "", subject: "" });
 
   const prog = hydrated
     ? getDayProgress(dayNum)
@@ -229,111 +233,175 @@ export default function DayPage({
                       : false;
 
                     return (
-                      <motion.button
+                      <div
                         key={topic.code}
-                        onClick={() => toggle(id)}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        whileHover={{ x: 2 }}
-                        transition={{
-                          delay: 0.15 + si * 0.06 + ti * 0.03,
-                          type: "spring",
-                          stiffness: 600,
-                          damping: 40,
-                        }}
                         style={{
                           display: "flex",
                           alignItems: "center",
-                          gap: 14,
-                          padding: "11px 0",
-                          background: "none",
-                          border: "none",
                           borderBottom: "1px solid rgba(255,255,255,0.04)",
-                          cursor: "pointer",
-                          textAlign: "left",
-                          width: "100%",
-                          transition: "opacity 0.15s",
                         }}
                       >
-                        {/* Check */}
-                        <div
+                        <motion.button
+                          onClick={() => toggle(id)}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          whileHover={{ x: 2 }}
+                          transition={{
+                            delay: 0.15 + si * 0.06 + ti * 0.03,
+                            type: "spring",
+                            stiffness: 600,
+                            damping: 40,
+                          }}
                           style={{
-                            width: 18,
-                            height: 18,
-                            borderRadius: 5,
-                            border: `1px solid ${done ? "rgba(74,222,128,0.5)" : "rgba(255,255,255,0.12)"}`,
-                            background: done
-                              ? "rgba(74,222,128,0.1)"
-                              : "transparent",
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
-                            flexShrink: 0,
-                            transition: "all 0.2s",
+                            gap: 14,
+                            padding: "11px 0",
+                            background: "none",
+                            border: "none",
+                            cursor: "pointer",
+                            textAlign: "left",
+                            flex: 1,
+                            minWidth: 0,
+                            transition: "opacity 0.15s",
                           }}
                         >
-                          <AnimatePresence>
-                            {done && (
-                              <motion.svg
-                                key="check"
-                                initial={{ scale: 0, opacity: 0 }}
-                                animate={{ scale: 1, opacity: 1 }}
-                                exit={{ scale: 0, opacity: 0 }}
-                                transition={{
-                                  type: "spring",
-                                  stiffness: 600,
-                                  damping: 30,
-                                }}
-                                width="10"
-                                height="10"
-                                viewBox="0 0 10 10"
-                                fill="none"
-                              >
-                                <path
-                                  d="M1.5 5L4 7.5L8.5 2.5"
-                                  stroke="#4ade80"
-                                  strokeWidth="1.5"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                />
-                              </motion.svg>
-                            )}
-                          </AnimatePresence>
-                        </div>
-
-                        {/* Content */}
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <span
+                          {/* Check */}
+                          <div
                             style={{
-                              fontSize: 14,
-                              fontWeight: 400,
-                              color: done
-                                ? "rgba(74,222,128,0.35)"
-                                : "rgba(255,255,255,0.8)",
-                              textDecorationLine: done
-                                ? "line-through"
-                                : "none",
-                              textDecorationColor: "rgba(74,222,128,0.2)",
+                              width: 18,
+                              height: 18,
+                              borderRadius: 5,
+                              border: `1px solid ${done ? "rgba(74,222,128,0.5)" : "rgba(255,255,255,0.12)"}`,
+                              background: done
+                                ? "rgba(74,222,128,0.1)"
+                                : "transparent",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              flexShrink: 0,
                               transition: "all 0.2s",
                             }}
                           >
-                            {topic.name}
-                          </span>
-                        </div>
+                            <AnimatePresence>
+                              {done && (
+                                <motion.svg
+                                  key="check"
+                                  initial={{ scale: 0, opacity: 0 }}
+                                  animate={{ scale: 1, opacity: 1 }}
+                                  exit={{ scale: 0, opacity: 0 }}
+                                  transition={{
+                                    type: "spring",
+                                    stiffness: 600,
+                                    damping: 30,
+                                  }}
+                                  width="10"
+                                  height="10"
+                                  viewBox="0 0 10 10"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M1.5 5L4 7.5L8.5 2.5"
+                                    stroke="#4ade80"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                  />
+                                </motion.svg>
+                              )}
+                            </AnimatePresence>
+                          </div>
 
-                        {/* Code */}
-                        <span
-                          style={{
-                            fontSize: 10,
-                            fontFamily: "var(--font-mono)",
-                            color: "rgba(255,255,255,0.15)",
-                            flexShrink: 0,
-                            letterSpacing: "0.04em",
-                          }}
-                        >
-                          {topic.code}
-                        </span>
-                      </motion.button>
+                          {/* Content */}
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <span
+                              style={{
+                                fontSize: 14,
+                                fontWeight: 400,
+                                color: done
+                                  ? "rgba(74,222,128,0.35)"
+                                  : "rgba(255,255,255,0.8)",
+                                textDecorationLine: done
+                                  ? "line-through"
+                                  : "none",
+                                textDecorationColor: "rgba(74,222,128,0.2)",
+                                transition: "all 0.2s",
+                              }}
+                            >
+                              {topic.name}
+                            </span>
+                          </div>
+
+                          {/* Code */}
+                          <span
+                            style={{
+                              fontSize: 10,
+                              fontFamily: "var(--font-mono)",
+                              color: "rgba(255,255,255,0.15)",
+                              flexShrink: 0,
+                              letterSpacing: "0.04em",
+                            }}
+                          >
+                            {topic.code}
+                          </span>
+                        </motion.button>
+
+                        {/* Practice button — only shows when topic is done */}
+                        <AnimatePresence>
+                          {done && (
+                            <motion.button
+                              initial={{ opacity: 0, scale: 0.8 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              exit={{ opacity: 0, scale: 0.8 }}
+                              transition={{
+                                type: "spring",
+                                stiffness: 500,
+                                damping: 30,
+                              }}
+                              onClick={() => {
+                                setPracticeTopic({
+                                  name: topic.name,
+                                  subject: subject.name,
+                                });
+                                setPracticeOpen(true);
+                              }}
+                              style={{
+                                marginLeft: 10,
+                                flexShrink: 0,
+                                fontSize: 11,
+                                fontFamily: "var(--font-mono)",
+                                padding: "4px 10px",
+                                borderRadius: 6,
+                                border: "1px solid rgba(167,139,250,0.25)",
+                                background: "rgba(167,139,250,0.08)",
+                                color: "#a78bfa",
+                                cursor: "pointer",
+                                letterSpacing: "0.03em",
+                                transition: "all 0.15s",
+                                whiteSpace: "nowrap",
+                              }}
+                              onMouseEnter={(e) => {
+                                (
+                                  e.currentTarget as HTMLElement
+                                ).style.background = "rgba(167,139,250,0.15)";
+                                (
+                                  e.currentTarget as HTMLElement
+                                ).style.borderColor = "rgba(167,139,250,0.4)";
+                              }}
+                              onMouseLeave={(e) => {
+                                (
+                                  e.currentTarget as HTMLElement
+                                ).style.background = "rgba(167,139,250,0.08)";
+                                (
+                                  e.currentTarget as HTMLElement
+                                ).style.borderColor = "rgba(167,139,250,0.25)";
+                              }}
+                            >
+                              Practice →
+                            </motion.button>
+                          )}
+                        </AnimatePresence>
+                      </div>
                     );
                   })}
                 </div>
@@ -564,6 +632,14 @@ export default function DayPage({
           )}
         </motion.div>
       </main>
+
+      {/* Practice Modal */}
+      <PracticeModal
+        topic={practiceTopic.name}
+        subject={practiceTopic.subject}
+        isOpen={practiceOpen}
+        onClose={() => setPracticeOpen(false)}
+      />
     </>
   );
 }

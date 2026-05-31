@@ -1,0 +1,406 @@
+LBS MCA ENTRANCE EXAM 2025 - COMPUTER SCIENCE QUESTIONS
+
+Q1. The language used to define database structure:
+A) DML
+B) DDL
+C) DCL
+D) TCL
+Answer: B
+Explanation: DDL (Data Definition Language) is used to define and modify database structure using commands like CREATE, ALTER, DROP.
+
+Q2. The SQL command used to remove a table from a database:
+A) DELETE
+B) REMOVE
+C) DROP
+D) ERASE
+Answer: C
+Explanation: DROP TABLE removes the entire table structure and its data from the database permanently.
+
+Q3. Which of the following is a valid SQL constraint?
+A) LIMIT
+B) BLOCK
+C) UNIQUE
+D) FIXED
+Answer: C
+Explanation: UNIQUE is a valid SQL constraint that ensures all values in a column are different.
+
+Q4. What is a primary key?
+A) Duplicate field
+B) Field with NULLs
+C) Unique identifier
+D) None of these
+Answer: C
+Explanation: A primary key is a unique identifier for each record in a table; it cannot be NULL or duplicate.
+
+Q5. Which of the following is not a type of JOIN?
+A) INNER
+B) OUTER
+C) LEFT
+D) UPPER
+Answer: D
+Explanation: UPPER is not a JOIN type. Valid JOIN types include INNER, OUTER, LEFT, RIGHT, and FULL.
+
+Q6. What is normalization?
+A) Data duplication
+B) Organizing data efficiently
+C) Data sorting
+D) Data encryption
+Answer: B
+Explanation: Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.
+
+Q7. Which function returns the number of rows in SQL?
+A) SUM()
+B) COUNT()
+C) AVG()
+D) NUMBER()
+Answer: B
+Explanation: COUNT() returns the number of rows that match a specified condition in SQL.
+
+Q8. The command used to give permission to users in SQL:
+A) GRANT
+B) ALLOW
+C) PERMIT
+D) GIVE
+Answer: A
+Explanation: GRANT is the DCL command used to give specific privileges to database users.
+
+Q9. A database is a collection of:
+A) Files
+B) Tables
+C) Related data
+D) Schemas
+Answer: C
+Explanation: A database is an organized collection of related data stored and accessed electronically.
+
+Q10. What is a foreign key?
+A) Unique field
+B) Primary key of another table
+C) Random value
+D) NULL
+Answer: B
+Explanation: A foreign key is a field in one table that refers to the primary key in another table, establishing a relationship.
+
+Q11. The keyword used to change data in SQL is:
+A) MODIFY
+B) CHANGE
+C) UPDATE
+D) EDIT
+Answer: C
+Explanation: UPDATE is the SQL DML command used to modify existing records in a table.
+
+Q12. What does ACID stand for in DBMS?
+A) Atomicity, Consistency, Isolation, Durability
+B) Add, Check, Integrate, Drop
+C) Access, Commit, Integrate, Data
+D) Access, Check, Integrate, Data
+Answer: A
+Explanation: ACID stands for Atomicity, Consistency, Isolation, and Durability — the four properties of reliable database transactions.
+
+Q13. The SQL keyword which sorts the result-set:
+A) GROUP BY
+B) SORT
+C) ORDER BY
+D) ARRANGE
+Answer: C
+Explanation: ORDER BY is used in SQL to sort the result-set in ascending or descending order.
+
+Q14. What is the output of the following code?
+int main() {
+int a = 5, b = 2;
+printf("%d", a++ + ++b);
+return 0;
+}
+A) 7
+B) 8
+C) 6
+D) 9
+Answer: B
+Explanation: a++ uses a=5 first (post-increment), ++b increments b to 3 first (pre-increment). So 5+3=8. After, a becomes 6.
+
+Q15. Which of the following is not a valid storage class in C?
+A) auto
+B) register
+C) static
+D) dynamic
+Answer: D
+Explanation: C has four storage classes: auto, register, static, and extern. dynamic is not a valid storage class in C.
+
+Q16. The C library function used to release dynamically allocated memory during runtime:
+A) free()
+B) NULL
+C) remove()
+D) empty()
+Answer: A
+Explanation: free() is used to deallocate memory that was previously allocated using malloc(), calloc(), or realloc().
+
+Q17. The output of the expression 5 * 2 + 3 * 4 will be:
+A) 26
+B) 23
+C) 22
+D) 18
+Answer: C
+Explanation: Following BODMAS/operator precedence: (5*2) + (3*4) = 10 + 12 = 22.
+
+Q18. The operator which has the highest precedence in C:
+A) ++
+B) *
+C) ()
+D) &&
+Answer: C
+Explanation: Parentheses () have the highest precedence among all operators in C.
+
+Q19. What is a dangling pointer in C?
+A) Pointer that is NULL
+B) Pointer that refers to freed memory
+C) Pointer pointing to another pointer
+D) Pointer not declared
+Answer: B
+Explanation: A dangling pointer points to a memory location that has been freed or deallocated, leading to undefined behavior.
+
+Q20. The header file needed for printf function:
+A) conio.h
+B) stdio.h
+C) stdlib.h
+D) math.h
+Answer: B
+Explanation: printf() is declared in stdio.h (standard input-output header file).
+
+Q21. Which loop is guaranteed to execute at least once?
+A) for
+B) while
+C) do-while
+D) None of these
+Answer: C
+Explanation: The do-while loop checks the condition after executing the body, so it always executes at least once.
+
+Q22. What does break keyword do in a loop?
+A) Skips current iteration
+B) Exits loop
+C) Exits program
+D) Restarts loop
+Answer: B
+Explanation: The break statement terminates the innermost loop immediately and transfers control to the statement after the loop.
+
+Q23. The data type used to store a single character in C:
+A) int
+B) char
+C) float
+D) string
+Answer: B
+Explanation: char is the data type used to store a single character in C, occupying 1 byte of memory.
+
+Q24. How do you declare a constant in C?
+A) #define PI 3.14
+B) const float PI = 3.14 
+C) Both A and B
+D) None of these
+Answer: C
+Explanation: Both #define (preprocessor macro) and const keyword can be used to declare constants in C.
+
+Q25. What is the output of: printf("%d", 10 > 5 && 5 < 3);
+A) 1
+B) 0
+C) True
+D) False
+Answer: B
+Explanation: 10>5 is true(1), 5<3 is false(0). 1 && 0 = 0. So output is 0.
+
+Q26. The function used to write a string to the standard output:
+A) scanf()
+B) gets()
+C) puts()
+D) display()
+Answer: C
+Explanation: puts() writes a string to stdout and automatically appends a newline character.
+
+Q27. What will be the output of the logic expression: !(1 && 0) || (1 && 1)?
+A) 0
+B) 1
+C) 11
+D) Undefined
+Answer: B
+Explanation: !(1&&0) = !(0) = 1; (1&&1) = 1; 1||1 = 1. Output is 1.
+
+Q28. The binary equivalent of decimal 13 is:
+A) 1101
+B) 1011
+C) 1110
+D) 1001
+Answer: A
+Explanation: 13 = 8+4+1 = 1101 in binary.
+
+Q29. The number system which has a base of 16:
+A) Binary
+B) Octal
+C) Decimal
+D) Hexadecimal
+Answer: D
+Explanation: Hexadecimal is base-16 number system using digits 0-9 and letters A-F.
+
+Q30. The result of 1 AND 0 is:
+A) 1
+B) 0
+C) 2
+D) Undefined
+Answer: B
+Explanation: In Boolean algebra, AND gate output is 1 only when both inputs are 1. 1 AND 0 = 0.
+
+Q31. Which gate is called a universal gate?
+A) AND
+B) OR
+C) NAND
+D) XOR
+Answer: C
+Explanation: NAND (and NOR) are called universal gates because any Boolean function can be implemented using only NAND gates.
+
+Q32. What is the two's complement of 0101?
+A) 1010
+B) 1101
+C) 1011
+D) 1110
+Answer: C
+Explanation: One's complement of 0101 is 1010. Adding 1 gives 1011. So two's complement is 1011.
+
+Q33. The minimum number of flip-flops required to store one byte is:
+A) 4
+B) 8
+C) 2
+D) 1
+Answer: B
+Explanation: One byte = 8 bits. Each flip-flop stores 1 bit, so 8 flip-flops are needed to store one byte.
+
+Q34. A full adder has __ inputs and __ outputs:
+A) 2, 1
+B) 3, 2
+C) 3, 1
+D) 2, 2
+Answer: B
+Explanation: A full adder has 3 inputs (A, B, Carry-in) and 2 outputs (Sum, Carry-out).
+
+Q35. The output of XOR gate when both inputs are 1 is:
+A) 0
+B) 1
+C) 2
+D) Undefined
+Answer: A
+Explanation: XOR output is 1 when inputs are different. When both inputs are 1, XOR output is 0.
+
+Q36. The flip-flop known as a basic latch:
+A) SR
+B) JK
+C) T
+D) D
+Answer: A
+Explanation: The SR (Set-Reset) flip-flop is the simplest and most basic form of a latch.
+
+Q37. The ASCII code stands for:
+A) American Standard Code for Information Interchange
+B) Advanced System Code for Input Interchange
+C) Analog Signal Coding Interface
+D) American Standard Code for Information Interface
+Answer: A
+Explanation: ASCII stands for American Standard Code for Information Interchange, a character encoding standard.
+
+Q38. Which of the following is a volatile memory?
+A) ROM
+B) PROM
+C) RAM
+D) EPROM
+Answer: C
+Explanation: RAM (Random Access Memory) is volatile — it loses its data when power is turned off.
+
+Q39. Which of the following converts digital signals to analog?
+A) Modulator
+B) Demodulator
+C) Multiplexer
+D) Decoder
+Answer: B
+Explanation: A demodulator (DAC - Digital to Analog Converter) converts digital signals to analog signals.
+
+Q40. Which of the following best describes pipelining in CPUs?
+A) Executing multiple processes simultaneously
+B) Using cache memory to speed up access
+C) Executing multiple instructions in overlapping stages
+D) Increasing clock speed
+Answer: C
+Explanation: Pipelining divides instruction execution into stages so multiple instructions can be processed simultaneously in overlapping stages.
+
+Q41. Which register holds the address of the next instruction to be executed?
+A) IR
+B) PC
+C) MAR
+D) MBR
+Answer: B
+Explanation: The Program Counter (PC) holds the memory address of the next instruction to be fetched and executed.
+
+Q42. In SQL, which keyword is used for pattern matching with wildcards?
+A) FIND
+B) LIKE
+C) MARK
+D) SEARCH
+Answer: B
+Explanation: The LIKE keyword is used with wildcards (% and _) for pattern matching in SQL WHERE clause.
+
+Q43. Cache memory is used to:
+A) Store permanent data
+B) Speed up memory access
+C) Backup data
+D) None of these
+Answer: B
+Explanation: Cache memory is a small, fast memory that stores frequently accessed data to speed up CPU memory access.
+
+Q44. How many different input combinations are possible for a 4-input logic gate?
+A) 8
+B) 4
+C) 16
+D) 32
+Answer: C
+Explanation: For n inputs, number of combinations = 2^n. For 4 inputs: 2^4 = 16 combinations.
+
+Q45. The basic unit of a digital computer is:
+A) Processor
+B) Transistor
+C) Flip-Flop
+D) Bit
+Answer: D
+Explanation: A bit (binary digit) is the most basic unit of data in a digital computer, representing either 0 or 1.
+
+Q46. Which of the following uses the stack?
+A) Subroutines
+B) Loops
+C) Variables
+D) Pointers
+Answer: A
+Explanation: Subroutine/function calls use the stack to store return addresses, local variables, and parameters.
+
+Q47. Which of the following is the fastest memory?
+A) RAM
+B) ROM
+C) Cache
+D) Hard Disk
+Answer: C
+Explanation: Cache memory is the fastest memory in a computer system, faster than RAM, ROM, and hard disk.
+
+Q48. Which among the following is not a type of interrupt?
+A) Software
+B) Hardware
+C) Manual
+D) Internal
+Answer: C
+Explanation: Types of interrupts include hardware, software, internal, and external interrupts. Manual is not a type of interrupt.
+
+Q49. The time required to access a storage location is called:
+A) Throughput
+B) Latency
+C) Bandwidth
+D) Response time
+Answer: B
+Explanation: Latency (or access time) is the time delay between a request to access a memory location and the data being available.
+
+Q50. The full form of DBMS is:
+A) Database Management System
+B) Data Business Management Software
+C) Database Manipulation System
+D) Data Backup Management System
+Answer: A
+Explanation: DBMS stands for Database Management System, software that manages databases.

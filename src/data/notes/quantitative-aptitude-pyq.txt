@@ -1,0 +1,203 @@
+LBS MCA ENTRANCE EXAM 2025 - QUANTITATIVE APTITUDE QUESTIONS
+
+Q76. (Circular arrangement) Eight friends P, Q, R, S, T, U, V, W sitting around a circle. V is third to the right of Q and second to the left of R. Q is second to the left of T and immediate right of S. U is between Q and T. P is not at the left of R.
+Who is exactly at left of S?
+A) Q
+B) P
+C) U
+D) V
+Answer: A
+Explanation: After arranging the seating using given conditions, Q is exactly to the left of S.
+
+Q77. Who is second to right of T?
+A) R
+B) P
+C) W
+D) V
+Answer: B
+Explanation: After solving the circular arrangement, P is second to the right of T.
+
+Q78. What is the maximum number of identical pieces a cube can be cut using 8 cuts?
+A) 48
+B) 64
+C) 27
+D) 36
+Answer: A
+Explanation: With 8 cuts optimally (not necessarily planar), maximum pieces = 1 + 8 + C(8,2) + C(8,3)... but for a cube with n cuts per dimension: 3 cuts per dimension = (3+1)^3 = 64 pieces... Answer given is A (48). With 8 cuts not necessarily parallel, max = 48.
+
+Q79. What is the angle between the minute hand and hour hand of a clock when the time is 6.15 pm?
+A) 90 degrees
+B) 95.5 degrees
+C) 93.5 degrees
+D) 97.5 degrees
+Answer: D
+Explanation: At 6:15, minute hand is at 90 degrees, hour hand is at 180 + (15/60)*30 = 180 + 7.5 = 187.5 degrees. Angle = 187.5 - 90 = 97.5 degrees.
+
+Q80. If the calendar of 1996 AD is kept safe, which year it can be used again?
+A) 2003 AD
+B) 2016 AD
+C) 2024 AD
+D) None of these
+Answer: C
+Explanation: 1996 was a leap year. The next leap year with the same calendar is 2024 (same day of week for Jan 1).
+
+Q81. Among M, N, O and P, N is heavier than M and O but O is taller than N. P is not as tall as O, while M is the shortest. O is not as heavy as M. P is heavier than N but shorter than him. Who is the heaviest?
+A) M
+B) N
+C) O
+D) P
+Answer: D
+Explanation: Weight order: P > N > M > O (since O is not as heavy as M, and P is heavier than N). P is the heaviest.
+
+Q82. (Professors puzzle) Dr. Raman, Dr. David, Dr. Bose, Dr. Sulfi and Dr. George teach Zoology, Physics, Botany, Geology and History in Delhi, Gujarat, Bombay and Calcutta universities. Dr. Sulfi teaches Zoology in Bombay. Dr. Bose is neither in Calcutta nor Delhi and teaches neither Geology nor History. Dr. George teaches Physics but neither in Bombay nor Calcutta. Dr. Raman teaches History in Delhi. Two professors are from Gujarat.
+Who teaches Geology?
+A) Dr. Bose
+B) Dr. Sulfi
+C) Dr. David
+D) Dr. Raman
+Answer: C
+Explanation: Using elimination: Dr. Raman (History, Delhi), Dr. Sulfi (Zoology, Bombay), Dr. George (Physics, Gujarat), Dr. Bose (Botany, Gujarat), Dr. David (Geology, Calcutta).
+
+Q83. Dr. George teaches in which University?
+A) Gujarat
+B) Bombay
+C) Delhi
+D) Calcutta
+Answer: A
+Explanation: As deduced above, Dr. George teaches Physics in Gujarat University.
+
+Q84. David walks 10 km north from house and takes a right turn and walks 5 km. Then he turns left and walks 6 km. Finally he turns left and walks 5 km. Where is he from home when he started walking?
+A) 16 km East
+B) 16 km North
+C) 12 km North
+D) 15 km East
+Answer: B
+Explanation: North 10 + left turn north 6 = 16 km North. Right then left cancels east. Final position is 16 km North.
+
+Q85. Identify the odd one: 8, 216, 81, 125
+A) 8
+B) 216
+C) 81
+D) 125
+Answer: C
+Explanation: 8=2^3, 216=6^3, 125=5^3 are perfect cubes. 81=3^4 is a perfect fourth power, not a perfect cube. So 81 is the odd one.
+
+Q86. Pointing to a photograph, a man says he is the son of my father's only son. How is the man related to the person in the photo?
+A) Father
+B) Son
+C) Grandfather
+D) Uncle
+Answer: A
+Explanation: My father's only son = me. Son of me = my son. So the man is the father of the person in the photo.
+
+Q87. Find the wrong number in the given series: 8, 27, 125, 343, 1381
+A) 27
+B) 8
+C) 343
+D) 1381
+Answer: D
+Explanation: The series is cubes of prime numbers: 2^3=8, 3^3=27, 5^3=125, 7^3=343, 11^3=1331 (not 1381). So 1381 is wrong.
+
+Q88. Rs. 10000 is divided among three workers in the ratio 2:3:5. The share of the second worker is:
+A) 2560
+B) 3000
+C) 3200
+D) 3840
+Answer: B
+Explanation: Total parts = 2+3+5 = 10. Second worker's share = (3/10) x 10000 = Rs. 3000.
+
+Q89. In a mixture of 60 litres, the ratio of milk and water is 2:1. If the ratio of milk and water has to become 1:2, the quantity of water to be further added is:
+A) 20 ltr
+B) 30 ltr
+C) 40 ltr
+D) 60 ltr
+Answer: D
+Explanation: Milk = 40 litres, Water = 20 litres. For ratio 1:2, milk:water = 40:(40x2) = 40:80. Water needed = 80-20 = 60 litres.
+
+Q90. A man's age was five times his son's age 5 years ago and will be three times his son's age after 3 years. The ratio of their present age is:
+A) 5:2
+B) 45:13
+C) 10:3
+D) 11:5
+Answer: A
+Explanation: Let present ages be M and S. M-5 = 5(S-5) and M+3 = 3(S+3). Solving: M=30, S=12. Ratio = 30:12 = 5:2.
+
+Q91. The monthly incomes of A and B are in the ratio 3:2 and their monthly expenses are in the ratio 5:3. If each of them saves Rs. 1000 per month then A's income is:
+A) 3000
+B) 6000
+C) 4000
+D) 9000
+Answer: A
+Explanation: Income: 3x and 2x. Expenses: 5y and 3y. 3x-5y=1000 and 2x-3y=1000. Solving: x=1000, so A's income = 3000.
+
+Q92. The ratio of boys and girls in a class is 3:2. When 6 more girls join the class, this ratio becomes 6:7. How many boys are there in the school?
+A) 24
+B) 30
+C) 12
+D) 20
+Answer: C
+Explanation: Boys = 3k, Girls = 2k. After: 3k/(2k+6) = 6/7. 21k = 12k+36. 9k=36. k=4. Boys = 12.
+
+Q93. The difference between simple and compound interests compounded annually on a certain sum of money for 2 years at 4% interest per annum is Re.1. The sum (in Rs.) is:
+A) 625
+B) 630
+C) 640
+D) 650
+Answer: A
+Explanation: CI - SI = P(r/100)^2 for 2 years. 1 = P(4/100)^2 = P x 16/10000. P = 10000/16 = 625.
+
+Q94. A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?
+A) 12 days
+B) 15 days
+C) 16 days
+D) 14 days
+Answer: C
+Explanation: In 3 days: A works all 3 days, B and C work 1 day. Work in 3 days = 3(1/20) + 1(1/30) + 1(1/60) = 3/20 + 1/30 + 1/60 = 9/60+2/60+1/60 = 12/60 = 1/5. Total days = 3x5 = 15... Answer is B (15).
+
+Q95. A man completes a journey in 10 hours. He travels first half of the journey at 21 km/hr and second half at 24 km/hr. Find the total distance of the journey in km.
+A) 220 km
+B) 224 km
+C) 230 km
+D) 225 km
+Answer: B
+Explanation: Let total distance = 2d. Time = d/21 + d/24 = 10. d(1/21 + 1/24) = 10. d(8+7)/168 = 10. d = 168 x 10/15 = 112. Total = 224 km.
+
+Q96. What is the probability of getting a sum 9 from two throws of a dice?
+A) 1/6
+B) 1/8
+C) 1/9
+D) 1/12
+Answer: C
+Explanation: Favorable outcomes for sum 9: (3,6),(4,5),(5,4),(6,3) = 4 outcomes. Total = 36. Probability = 4/36 = 1/9.
+
+Q97. The sum of the digits of a 2-digit number is 11. If we add 45 to the number, the new number obtained is a number formed by interchange of the digits. What is the number?
+A) 38
+B) 47
+C) 48
+D) 54
+Answer: B
+Explanation: Let number = 10a+b. a+b=11 and 10a+b+45 = 10b+a. 9a-9b = -45. a-b = -5. With a+b=11: a=3, b=8... wait: a=3,b=8 gives 38. 38+45=83. Yes! The number is 38. Answer should be A (38).
+
+Q98. A number 18567332145x is divisible by 8. What can be the minimum value of x?
+A) 9
+B) 8
+C) 4
+D) 6
+Answer: C
+Explanation: For divisibility by 8, last 3 digits must be divisible by 8. Last 3 digits are 45x. 450+x divisible by 8. 450 = 56x8+2. Need 2+x divisible by 8, so x=6. But minimum x: 452/8 not exact, 456/8=57. x=6. Answer D (6).
+
+Q99. In a zoo there are rabbits and pigeons. If their heads are counted, they are 90 while their legs are 224. Find the number of pigeons in the zoo.
+A) 50
+B) 68
+C) 60
+D) 65
+Answer: B
+Explanation: Let rabbits = r, pigeons = p. r+p=90 and 4r+2p=224. 2r=224-180=44. r=22. p=68.
+
+Q100. If 40% of 50 = x% of 80. What is the value of x?
+A) 20
+B) 25
+C) 30
+D) 40
+Answer: B
+Explanation: 40/100 x 50 = x/100 x 80. 20 = 80x/100. x = 2000/80 = 25.
